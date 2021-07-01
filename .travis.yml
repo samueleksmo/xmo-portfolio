@@ -4,6 +4,8 @@ services:
 before_install:
   - docker build -t eksmo/xmo-webserver-image:$TRAVIS_BUILD_NUMBER .
 
-#!/bin/bash
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-docker push eksmo/xmo-webserver-image$TRAVIS_BUILD_NUMBER
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
