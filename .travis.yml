@@ -2,7 +2,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t eksmo/repo:$TRAVIS_BUILD_NUMBER .
+  - docker build -t eksmo/xmorepo:$TRAVIS_BUILD_NUMBER .
 
 deploy:
   provider: script
