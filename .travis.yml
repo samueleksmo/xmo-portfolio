@@ -9,6 +9,7 @@ jobs:
       - docker images
       - docker tag xmorepo:$TRAVIS_BUILD_NUMBER $DOCKER_USERNAME/xmorepo:$TRAVIS_BUILD_NUMBER
       - docker push $DOCKER_USERNAME/xmorepo:$TRAVIS_BUILD_NUMBER
+      - docker push $DOCKER_USERNAME/xmorepo:latest
     - stage: test
       script: echo "running test 1"
     - script: echo "running test 2"
