@@ -7,7 +7,7 @@ jobs:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
       - docker build -t xmorepo:$TRAVIS_BUILD_NUMBER .
       - docker images
-      - docker tag xmorepo $DOCKER_USERNAME/xmorepo
+      - docker tag xmorepo:$TRAVIS_BUILD_NUMBER $DOCKER_USERNAME/xmorepo
       - docker push $DOCKER_USERNAME/xmorepo
     - stage: test
       script: echo "running test 1"
