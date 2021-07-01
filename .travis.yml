@@ -1,11 +1,14 @@
-services:
-  - docker
+dist: trusty
 
-before_install:
-  - docker build -t eksmo/xmorepo:$TRAVIS_BUILD_NUMBER .
-
-deploy:
-  provider: script
-  script: bash docker_push
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker build -t xmorepo .
+      - docker images
+      - docker tag xmorepo $DOCKER_USERNAME/xmorepo
+      - docker push $DOCKER_USERNAME/xmorepo
+    - stage: test
+      script: echo "running test 1"
+    - script: echo "running test 2"
