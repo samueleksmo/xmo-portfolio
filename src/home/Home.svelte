@@ -1,7 +1,5 @@
 <script>
-
     import Nav from './Nav.svelte'
-
 </script>
 
 
@@ -32,7 +30,7 @@
 		
 	}
 	h2 {
-		font-size: 2.3em;
+		font-size: 2.6em;
     	color:white;
     	font-family: Oswald;
     	font-weight:bold;
@@ -48,9 +46,10 @@
 		
 	}
 	.softwareheader {
-		padding-left: 18px;
-		letter-spacing: 0.55em;
-		
+		padding-left: 16px;
+		letter-spacing: 0.44em;
+		line-height: 44px; 
+		color: #E56B6F;
 	}
 	.softwarewrapper{
 		border-width: 8px;
@@ -67,10 +66,15 @@
 	}
 
 
-	@media (min-width: 640px) {
+	@media (min-width: 1366px) {
         div {
         /* height: 1920px; */
         background-size: 100% auto;
+		}
+
+		.softwarewrapper {
+			display: none;
+
 		}
 	}
 
