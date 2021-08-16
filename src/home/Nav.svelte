@@ -1,58 +1,50 @@
 <script>
+    import Sidebar from './Sidebar.svelte'
     let hamburger = 'images/hamburger.svg';
     let xmologo = 'images/xmo_logored.svg';
+ 
 
-    let menu = { menuPressed: false };
-
-    function toggle() {
-        menu.menuPressed = !menu.menuPressed;
-    }
+    export let open = false
 </script>
 
 
 <nav class="smallscreen">
-    {#if menu.menuPressed}
-    <div class="topnav">
-        <a href="#home" >
-            <img src={xmologo} alt="xmo logo"  class="logo">
-        </a>
-        <a href={'#'}  on:click={toggle}> 
-            <img src={hamburger} alt="hamburger menu" class="hamburger">
-        </a>
-    </div>
-    {:else}
-    <div class="topnav">
-        <a href="#home" >
-            <img src={xmologo} alt="xmo logo"  class="logo">
-        </a>
-        <a href={'#'} class="hamburgerwrapper" on:click={toggle}> 
-            <img src={hamburger} alt="hamburger menu" class="hamburger">
-        </a>
-    </div>
-    <div class="myLinks">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </div>
-    {/if}
+        <div class="topnavwrapper">
+            <div class="rapper">
+            <a href="#home" >
+                <img src={xmologo} alt="xmo logo"  class="logo">
+            </a>
+             <a href={'#!'}  on:click={() => open = !open} > 
+                <img src={hamburger} alt="hamburger menu" class="hamburger">
+            </a>
+            </div>
+            <div class="navwrapper">
+                <Sidebar bind:open/>
+            </div>
+        </div>
 </nav>
+
+
+
 
 <nav class="bigscreen">
     <div class="topnav">
-        <div class="logowrapper">
-            <a href="#home">
-                <img src={xmologo} alt="xmo logo"  class="logo">
-            </a>
-            <div class="titlewrapper">
-                <h1 class="titleh1">Samuel Eksmo</h1>
-                <h2 class="titleh2">Software Engineer</h2>
+     
+            <div class="logowrapper">
+                <a href="#home">
+                    <img src={xmologo} alt="xmo logo"  class="logo">
+                </a>
+                <div class="titlewrapper">
+                    <h1 class="titleh1">Samuel Eksmo</h1>
+                    <h2 class="titleh2">Software Engineer</h2>
+                </div>
             </div>
-        </div>
-        <div class="myLinks">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
+            <div class="myLinks">
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        
     </div>
 </nav>
 
@@ -62,18 +54,45 @@
     display: none;
 }
 nav {
+    
     height: 40%;
+    width: 100%;
 }
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.topnavwrapper {
+    top:3%;
+    left: 5%;
+    width: 90%;
+    display: block;
+    justify-content: space-between;
+    position: fixed;
+}
+.rapper {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navwrapper {
+    width: 100%;
+    display: block;
+    justify-content: space-between;
+    
 }
 .myLinks {
     display: flex;
-    height: 60%;
+    height: 20%;
+    width: 100%;
+    margin-top: 16%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    /* position: fixed; */
+   
 }
 .myLinks a {
     font-size: 28px;
@@ -106,18 +125,25 @@ nav {
     .smallscreen {
         display: none;
     }
-    .bigscreen {
-        display: flex;
-        margin: 0 auto;
-        width: 1366px;       
+    .bigscreen {    
+    display: flex;
+    margin: 0 auto;
+    width: 1366px;          
     }
     nav {
     height: 12%;
     }
     .topnav {
-    width: 100%;
+    width: 1366px;  
+    display: flex;
+
+    }
+    .topnavwrapper {
+    width: 1366px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    text-align: center;
     }
 
     .myLinks {
@@ -127,6 +153,7 @@ nav {
     width: 600px;
     margin-top: 70px;
     height: 30%;
+    position:unset;
 
     }
     .logo{
@@ -160,8 +187,7 @@ nav {
         margin-bottom: 0%;
         letter-spacing: 1px;
         word-spacing: 6px;
-        color: #474444;
-        
+        color: #474444;   
     }
 }
 
