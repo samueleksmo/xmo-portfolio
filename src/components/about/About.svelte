@@ -1,5 +1,6 @@
 <script>
 import { _ } from '../../services/i18n';
+import Links from './Links.svelte'
 </script>
 
 
@@ -10,13 +11,13 @@ import { _ } from '../../services/i18n';
 		<br><br>{$_('p2')}
 	</p>
 	</div>
+	<Links/>
 </div>
 
 
 <style>
 	div {
         background-color: #FCFBFB;
-        
 		margin: 0 auto;
         background-repeat: no-repeat;
 		text-align: center;
@@ -38,7 +39,7 @@ import { _ } from '../../services/i18n';
 	}
 	p {
 		font-size: 24px;
-		font-family: Roboto;
+		font-family: 'Roboto', sans-serif;
 		text-align: left;
 		letter-spacing: 1.2px;
 		row-gap: 1.2px;

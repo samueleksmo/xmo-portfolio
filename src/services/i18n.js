@@ -33,7 +33,7 @@ import {
         "Software Engineer":"Mjukvaruingenjör",
         "Multi creator": "Kreatör",
         "p1":"Jag har jobbat som mjukvaruutvecklare i drygt 3 år och har under den här perioden levererat spetsteknologi för några av Sveriges största företag. I de senaste projekten så har min roll varit centrerad kring DevOps, framförallt Docker och Kubernetes i GCP och Azure.", 
-        "p2":"Data Science är också något som jag känner ett starkt intresse för och fått möjlighet att arbeta med. Jag har främst använt enklare regression, klassifikation och kluster-modeller i mina (python) projekt. Jag tycker också om att utforska min egen kreativitet i olika områden som webdesign, piano och klättring.", 
+        "p2":"Data Science är också något som jag känner ett starkt intresse för! Jag har främst använt enklare regression, klassifikation och kluster-modeller i mina (python) projekt. Jag tycker också om att utforska min egen kreativitet i olika områden som webdesign, piano och klättring.", 
         "p3":"Under min tid på Chalmers så fick jag möjlighet att åka på ett utbyte till UC Berkeley i San Francisco. Jag var också med i projektgruppen som hade ansvar för utbytet och fick på så sätt möjligheten att bygga utbytets egen hemsida helt på egen hand.",
         "p4":"Under min perioden som it-konsult på IBM så fick jag möjlighet att delta i ett nytt spännande projekt på Volvo Trucks. Mitt teams produkt extraherade värdeful infromation från lastbilarna i realtid. Min roll var centrerad kring dataflödet, frontend och DevOpsbitarna i projektet. Du kan läsa mer om projektet på Volvo Trucks egen hemsida."
       },

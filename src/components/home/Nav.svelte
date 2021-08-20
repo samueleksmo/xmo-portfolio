@@ -110,6 +110,7 @@ nav {
     width: 2.8em;
     padding-top: 0.4em;
     
+    
 }
 .logo{
     width: 8em;
@@ -122,10 +123,7 @@ nav {
   color: black;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  color: white;
-}
+
 
 @media (min-width: 1366px) {
     .smallscreen {

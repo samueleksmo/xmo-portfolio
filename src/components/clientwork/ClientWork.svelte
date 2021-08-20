@@ -52,9 +52,9 @@
 
 <style>
 	section {
-        background-color: #355070;
+        background-color: #001219;
 		padding-top: 2em;		
-		padding-bottom: 2em;		
+		padding-bottom: 6em;		
         background-repeat: no-repeat;
 		text-align: center;
 		flex-direction: column;
@@ -66,7 +66,7 @@
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		margin-top: 7em;
+		margin-top: 4em;
 
 	}
 	.textwrapper {
@@ -104,7 +104,7 @@
 		letter-spacing: 5px;
 	}
 	p {
-		font-family: Roboto;
+		font-family: 'Roboto', sans-serif;
 		color: #FCFBFB;
 		letter-spacing: 1.2px;
 	}
@@ -117,8 +117,8 @@
 	@media (min-width: 900px) {
 		section {
 		display: flex;
-		padding-top: 4em;
-		padding-bottom: 4em;
+		padding-top: 2em;
+		padding-bottom: 7em;
 		}
 		.cardwrapper {
 		width: 900px;
