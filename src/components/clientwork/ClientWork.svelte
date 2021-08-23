@@ -3,13 +3,15 @@
     import { fly, scale } from 'svelte/transition';
 	let berkeley = 'images/sanfran.jpg';
 	let truck = 'images/truck.jpg';
+	let git = 'images/git.jpg';
 	export let open;
 	export let openibm;
+	export let opengit;
 </script>
 
 
 <section id="portfolio">
-	<h1>Portfolio</h1>
+	<h1>PORTFOLIO</h1>
 	<div class="cardwrapper">
 		<div class="card" on:click={() => open = !open}>	
 			<img src={berkeley} alt="xmo logo"  >
@@ -46,11 +48,39 @@
 				{/if}
 			</div>
 		</div>
+		<div class="card" on:click={() => opengit = !opengit}>	
+			<img src={git} alt="calculator"  >
+			<div class="textwrapper">
+				<h2>IBM Capstone <br> // Revenue Prediction</h2>
+				<h3>Data Scientist</h3>
+				
+				{#if opengit}
+					<div transition:fly={{ y: -15, delay: 50  }}>
+							<p >
+								{$_('p5')}
+								
+							</p>
+							<a href="https://github.com/aavail/ai-workflow-capstone">Check it out!</a>
+					</div>
+				{/if}
+			</div>
+		</div>
 	</div>
+
 </section>
 
 
+
 <style>
+	@font-face{
+  	font-family: 'Yantramanav-Light';
+  		src: url('/fonts/Yantramanav-Light.woff2') format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Oranienbaum';
+  		src: url('/fonts/Oranienbaum-Regular.woff2') format('woff2');
+	}
 	section {
         background-color: #001219;
 		padding-top: 2em;		
@@ -73,8 +103,8 @@
 		text-align: left;
 	}
 	h1 {
-		font-size: 4em;
-		font-family: Oranienbaum;
+		font-size: 3.5em;
+		font-family: 'Yantramanav-Light', sans-serif;
 		text-align: center;
 		margin-block-start: 0em;
     	margin-block-end: 0em;
@@ -104,7 +134,7 @@
 		letter-spacing: 5px;
 	}
 	p {
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Yantramanav-Light', sans-serif;
 		color: #FCFBFB;
 		letter-spacing: 1.2px;
 	}
@@ -114,14 +144,14 @@
 		color: #EAAC8B;
 		letter-spacing: 4px;
 	}
-	@media (min-width: 900px) {
+	@media (min-width: 1200px) {
 		section {
 		display: flex;
 		padding-top: 2em;
 		padding-bottom: 7em;
 		}
 		.cardwrapper {
-		width: 900px;
+		width: 1200px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction:row;

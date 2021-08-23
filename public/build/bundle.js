@@ -3479,7 +3479,8 @@ var app = (function () {
             "p1":"I’ve worked as a Software Engineer for the past 3 years, delivering cutting edge technology for some of the biggest brands in Sweden. In my most recent projects my role has been focused around DevOps working mainly with Docker and Kubernetes in GCP and Azure.",
             "p2":"I also find Data Science facinating and have used Machine Learning techniques such as regression, classification, clustering and outlier detection in some of my projects, mainly in Python. I also love to explore and train my own creative style in whatever area that pequed my curiosity, be it webdesign, piano or lead climbing.",
             "p3":"During my time at university, I got the opportunity to do an exchange semester at UC Berkeley in California. While being part of a project group surrounding the exchange. I got the chance to develop its own website.",
-            "p4":"During my time working as an it-consultant for IBM I was part of an exiting project at Volvo Trucks. Helping them utelize the power of their data with real time monitoring of trucks tier health. My role was centered around the data flow, frontend and DevOps part of the project. You can read more about it at Volvo Truck's own website."
+            "p4":"During my time working as an it-consultant for IBM I was part of an exiting project at Volvo Trucks. Helping them utelize the power of their data with real time monitoring of trucks tier health. My role was centered around the data flow, frontend and DevOps part of the project. You can read more about it at Volvo Truck's own website.",
+            "p5":"This project was the final piece of a Machine Learning certification I took part in when I worked for IBM. The idea was to use time series analysis to forecast revenue prediction for the next 30 days for specific countries. The final model is a trained random-forest algorithm that forecasts the revenue of a country when called through a dummy (Flask) api running locally." 
           },
           sv: {
             "contact": "Kontakt",
@@ -3492,7 +3493,8 @@ var app = (function () {
             "p1":"Jag har jobbat som mjukvaruutvecklare i drygt 3 år och har under den här perioden levererat spetsteknologi för några av Sveriges största företag. I de senaste projekten så har min roll varit centrerad kring DevOps, framförallt Docker och Kubernetes i GCP och Azure.", 
             "p2":"Data Science är också något som jag känner ett starkt intresse för! Jag har främst använt enklare regression, klassifikation och kluster-modeller i mina (python) projekt. Jag tycker också om att utforska min egen kreativitet i olika områden som webdesign, piano och klättring.", 
             "p3":"Under min tid på Chalmers så fick jag möjlighet att åka på ett utbyte till UC Berkeley i San Francisco. Jag var också med i projektgruppen som hade ansvar för utbytet och fick på så sätt möjligheten att bygga utbytets egen hemsida helt på egen hand.",
-            "p4":"Under min perioden som it-konsult på IBM så fick jag möjlighet att delta i ett nytt spännande projekt på Volvo Trucks. Mitt teams produkt extraherade värdeful infromation från lastbilarna i realtid. Min roll var centrerad kring dataflödet, frontend och DevOpsbitarna i projektet. Du kan läsa mer om projektet på Volvo Trucks egen hemsida."
+            "p4":"Under min perioden som it-konsult på IBM så fick jag möjlighet att delta i ett nytt spännande projekt på Volvo Trucks. Mitt teams produkt extraherade värdeful infromation från lastbilarna i realtid. Min roll var centrerad kring dataflödet, frontend och DevOpsbitarna i projektet. Du kan läsa mer om projektet på Volvo Trucks egen hemsida.",
+            "p5":"IBM Capstone projektet var den sista steget i en Machine Learnings kurs jag tog under under tiden jag jobbade på IBM. I projektet skulle vi med hjälp av tidsserie-analys göra inkomstprediktioner för spefifika länder åt ett fiktivt företag. Den färdiga modellen är en random-forest algoritm som returnerar en 30 dagars prediktion på ett land när den kallas genom ett lokalt (Flask) api."  
           },
 
         });
@@ -4287,14 +4289,14 @@ var app = (function () {
     			t2 = space();
     			h2 = element("h2");
     			h2.textContent = "Software Engineer";
-    			attr_dev(h1, "class", "mainheader svelte-x4ypfh");
+    			attr_dev(h1, "class", "mainheader svelte-o9x0zc");
     			add_location(h1, file$5, 12, 2, 179);
-    			attr_dev(h2, "class", "mainheader softwareheader svelte-x4ypfh");
+    			attr_dev(h2, "class", "mainheader softwareheader svelte-o9x0zc");
     			add_location(h2, file$5, 13, 2, 222);
-    			attr_dev(div0, "class", "softwarewrapper svelte-x4ypfh");
+    			attr_dev(div0, "class", "softwarewrapper svelte-o9x0zc");
     			add_location(div0, file$5, 11, 1, 147);
     			attr_dev(div1, "id", "homepage");
-    			attr_dev(div1, "class", "home svelte-x4ypfh");
+    			attr_dev(div1, "class", "home svelte-o9x0zc");
     			add_location(div1, file$5, 7, 0, 100);
     		},
     		l: function claim(nodes) {
@@ -4367,11 +4369,11 @@ var app = (function () {
     /* src/components/clientwork/ClientWork.svelte generated by Svelte v3.38.3 */
     const file$4 = "src/components/clientwork/ClientWork.svelte";
 
-    // (20:4) {#if open}
-    function create_if_block_1(ctx) {
+    // (22:4) {#if open}
+    function create_if_block_2(ctx) {
     	let div;
     	let p;
-    	let t0_value = /*$_*/ ctx[2]("p3") + "";
+    	let t0_value = /*$_*/ ctx[3]("p3") + "";
     	let t0;
     	let t1;
     	let a;
@@ -4386,12 +4388,12 @@ var app = (function () {
     			t1 = space();
     			a = element("a");
     			a.textContent = "Check it out!";
-    			attr_dev(p, "class", "svelte-65m2ty");
-    			add_location(p, file$4, 21, 7, 569);
+    			attr_dev(p, "class", "svelte-1akh483");
+    			add_location(p, file$4, 23, 7, 619);
     			attr_dev(a, "href", "https://berkeleychalmers.se/");
-    			attr_dev(a, "class", "svelte-65m2ty");
-    			add_location(a, file$4, 25, 7, 621);
-    			add_location(div, file$4, 20, 5, 516);
+    			attr_dev(a, "class", "svelte-1akh483");
+    			add_location(a, file$4, 27, 7, 671);
+    			add_location(div, file$4, 22, 5, 566);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4402,7 +4404,76 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if ((!current || dirty & /*$_*/ 4) && t0_value !== (t0_value = /*$_*/ ctx[2]("p3") + "")) set_data_dev(t0, t0_value);
+    			if ((!current || dirty & /*$_*/ 8) && t0_value !== (t0_value = /*$_*/ ctx[3]("p3") + "")) set_data_dev(t0, t0_value);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			add_render_callback(() => {
+    				if (!div_transition) div_transition = create_bidirectional_transition(div, fly, { y: -15, delay: 50 }, true);
+    				div_transition.run(1);
+    			});
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			if (!div_transition) div_transition = create_bidirectional_transition(div, fly, { y: -15, delay: 50 }, false);
+    			div_transition.run(0);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			if (detaching && div_transition) div_transition.end();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2.name,
+    		type: "if",
+    		source: "(22:4) {#if open}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (40:4) {#if openibm}
+    function create_if_block_1(ctx) {
+    	let div;
+    	let p;
+    	let t0_value = /*$_*/ ctx[3]("p4") + "";
+    	let t0;
+    	let t1;
+    	let a;
+    	let div_transition;
+    	let current;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			p = element("p");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			a = element("a");
+    			a.textContent = "Check it out!";
+    			attr_dev(p, "class", "svelte-1akh483");
+    			add_location(p, file$4, 41, 7, 1063);
+    			attr_dev(a, "href", "https://www.volvotrucks.com/en-en/news-stories/press-releases/2018/sep/pressrelease-180906.html");
+    			attr_dev(a, "class", "svelte-1akh483");
+    			add_location(a, file$4, 45, 7, 1115);
+    			add_location(div, file$4, 40, 5, 1010);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, p);
+    			append_dev(p, t0);
+    			append_dev(div, t1);
+    			append_dev(div, a);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty & /*$_*/ 8) && t0_value !== (t0_value = /*$_*/ ctx[3]("p4") + "")) set_data_dev(t0, t0_value);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -4429,18 +4500,18 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(20:4) {#if open}",
+    		source: "(40:4) {#if openibm}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:4) {#if openibm}
+    // (57:4) {#if opengit}
     function create_if_block(ctx) {
     	let div;
     	let p;
-    	let t0_value = /*$_*/ ctx[2]("p4") + "";
+    	let t0_value = /*$_*/ ctx[3]("p5") + "";
     	let t0;
     	let t1;
     	let a;
@@ -4455,12 +4526,12 @@ var app = (function () {
     			t1 = space();
     			a = element("a");
     			a.textContent = "Check it out!";
-    			attr_dev(p, "class", "svelte-65m2ty");
-    			add_location(p, file$4, 39, 7, 1013);
-    			attr_dev(a, "href", "https://www.volvotrucks.com/en-en/news-stories/press-releases/2018/sep/pressrelease-180906.html");
-    			attr_dev(a, "class", "svelte-65m2ty");
-    			add_location(a, file$4, 43, 7, 1065);
-    			add_location(div, file$4, 38, 5, 960);
+    			attr_dev(p, "class", "svelte-1akh483");
+    			add_location(p, file$4, 58, 7, 1567);
+    			attr_dev(a, "href", "https://github.com/aavail/ai-workflow-capstone");
+    			attr_dev(a, "class", "svelte-1akh483");
+    			add_location(a, file$4, 62, 7, 1619);
+    			add_location(div, file$4, 57, 5, 1514);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4471,7 +4542,7 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if ((!current || dirty & /*$_*/ 4) && t0_value !== (t0_value = /*$_*/ ctx[2]("p4") + "")) set_data_dev(t0, t0_value);
+    			if ((!current || dirty & /*$_*/ 8) && t0_value !== (t0_value = /*$_*/ ctx[3]("p5") + "")) set_data_dev(t0, t0_value);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -4498,7 +4569,7 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(38:4) {#if openibm}",
+    		source: "(57:4) {#if opengit}",
     		ctx
     	});
 
@@ -4509,7 +4580,7 @@ var app = (function () {
     	let section;
     	let h1;
     	let t1;
-    	let div4;
+    	let div6;
     	let div1;
     	let img0;
     	let img0_src_value;
@@ -4535,19 +4606,33 @@ var app = (function () {
     	let t12;
     	let h31;
     	let t14;
+    	let t15;
+    	let div5;
+    	let img2;
+    	let img2_src_value;
+    	let t16;
+    	let div4;
+    	let h22;
+    	let t17;
+    	let br2;
+    	let t18;
+    	let t19;
+    	let h32;
+    	let t21;
     	let current;
     	let mounted;
     	let dispose;
-    	let if_block0 = /*open*/ ctx[0] && create_if_block_1(ctx);
-    	let if_block1 = /*openibm*/ ctx[1] && create_if_block(ctx);
+    	let if_block0 = /*open*/ ctx[0] && create_if_block_2(ctx);
+    	let if_block1 = /*openibm*/ ctx[1] && create_if_block_1(ctx);
+    	let if_block2 = /*opengit*/ ctx[2] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
     			section = element("section");
     			h1 = element("h1");
-    			h1.textContent = "Portfolio";
+    			h1.textContent = "PORTFOLIO";
     			t1 = space();
-    			div4 = element("div");
+    			div6 = element("div");
     			div1 = element("div");
     			img0 = element("img");
     			t2 = space();
@@ -4575,37 +4660,63 @@ var app = (function () {
     			h31.textContent = "Data Engineer";
     			t14 = space();
     			if (if_block1) if_block1.c();
-    			attr_dev(h1, "class", "svelte-65m2ty");
-    			add_location(h1, file$4, 11, 1, 251);
-    			if (img0.src !== (img0_src_value = /*berkeley*/ ctx[3])) attr_dev(img0, "src", img0_src_value);
+    			t15 = space();
+    			div5 = element("div");
+    			img2 = element("img");
+    			t16 = space();
+    			div4 = element("div");
+    			h22 = element("h2");
+    			t17 = text("IBM Capstone ");
+    			br2 = element("br");
+    			t18 = text(" // Revenue Prediction");
+    			t19 = space();
+    			h32 = element("h3");
+    			h32.textContent = "Data Scientist";
+    			t21 = space();
+    			if (if_block2) if_block2.c();
+    			attr_dev(h1, "class", "svelte-1akh483");
+    			add_location(h1, file$4, 13, 1, 301);
+    			if (img0.src !== (img0_src_value = /*berkeley*/ ctx[4])) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "xmo logo");
-    			add_location(img0, file$4, 14, 3, 352);
-    			add_location(br0, file$4, 16, 26, 445);
-    			attr_dev(h20, "class", "svelte-65m2ty");
-    			add_location(h20, file$4, 16, 4, 423);
-    			attr_dev(h30, "class", "svelte-65m2ty");
-    			add_location(h30, file$4, 17, 4, 470);
-    			attr_dev(div0, "class", "textwrapper svelte-65m2ty");
-    			add_location(div0, file$4, 15, 3, 393);
-    			attr_dev(div1, "class", "card svelte-65m2ty");
-    			add_location(div1, file$4, 13, 2, 299);
-    			if (img1.src !== (img1_src_value = /*truck*/ ctx[4])) attr_dev(img1, "src", img1_src_value);
+    			add_location(img0, file$4, 16, 3, 402);
+    			add_location(br0, file$4, 18, 26, 495);
+    			attr_dev(h20, "class", "svelte-1akh483");
+    			add_location(h20, file$4, 18, 4, 473);
+    			attr_dev(h30, "class", "svelte-1akh483");
+    			add_location(h30, file$4, 19, 4, 520);
+    			attr_dev(div0, "class", "textwrapper svelte-1akh483");
+    			add_location(div0, file$4, 17, 3, 443);
+    			attr_dev(div1, "class", "card svelte-1akh483");
+    			add_location(div1, file$4, 15, 2, 349);
+    			if (img1.src !== (img1_src_value = /*truck*/ ctx[5])) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "truck on road");
-    			add_location(img1, file$4, 32, 3, 783);
-    			add_location(br1, file$4, 34, 21, 873);
-    			attr_dev(h21, "class", "svelte-65m2ty");
-    			add_location(h21, file$4, 34, 4, 856);
-    			attr_dev(h31, "class", "svelte-65m2ty");
-    			add_location(h31, file$4, 35, 4, 909);
-    			attr_dev(div2, "class", "textwrapper svelte-65m2ty");
-    			add_location(div2, file$4, 33, 3, 826);
-    			attr_dev(div3, "class", "card svelte-65m2ty");
-    			add_location(div3, file$4, 31, 2, 724);
-    			attr_dev(div4, "class", "cardwrapper svelte-65m2ty");
-    			add_location(div4, file$4, 12, 1, 271);
+    			add_location(img1, file$4, 34, 3, 833);
+    			add_location(br1, file$4, 36, 21, 923);
+    			attr_dev(h21, "class", "svelte-1akh483");
+    			add_location(h21, file$4, 36, 4, 906);
+    			attr_dev(h31, "class", "svelte-1akh483");
+    			add_location(h31, file$4, 37, 4, 959);
+    			attr_dev(div2, "class", "textwrapper svelte-1akh483");
+    			add_location(div2, file$4, 35, 3, 876);
+    			attr_dev(div3, "class", "card svelte-1akh483");
+    			add_location(div3, file$4, 33, 2, 774);
+    			if (img2.src !== (img2_src_value = /*git*/ ctx[6])) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "calculator");
+    			add_location(img2, file$4, 51, 3, 1341);
+    			add_location(br2, file$4, 53, 21, 1426);
+    			attr_dev(h22, "class", "svelte-1akh483");
+    			add_location(h22, file$4, 53, 4, 1409);
+    			attr_dev(h32, "class", "svelte-1akh483");
+    			add_location(h32, file$4, 54, 4, 1462);
+    			attr_dev(div4, "class", "textwrapper svelte-1akh483");
+    			add_location(div4, file$4, 52, 3, 1379);
+    			attr_dev(div5, "class", "card svelte-1akh483");
+    			add_location(div5, file$4, 50, 2, 1282);
+    			attr_dev(div6, "class", "cardwrapper svelte-1akh483");
+    			add_location(div6, file$4, 14, 1, 321);
     			attr_dev(section, "id", "portfolio");
-    			attr_dev(section, "class", "svelte-65m2ty");
-    			add_location(section, file$4, 10, 0, 225);
+    			attr_dev(section, "class", "svelte-1akh483");
+    			add_location(section, file$4, 12, 0, 275);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4614,8 +4725,8 @@ var app = (function () {
     			insert_dev(target, section, anchor);
     			append_dev(section, h1);
     			append_dev(section, t1);
-    			append_dev(section, div4);
-    			append_dev(div4, div1);
+    			append_dev(section, div6);
+    			append_dev(div6, div1);
     			append_dev(div1, img0);
     			append_dev(div1, t2);
     			append_dev(div1, div0);
@@ -4627,8 +4738,8 @@ var app = (function () {
     			append_dev(div0, h30);
     			append_dev(div0, t7);
     			if (if_block0) if_block0.m(div0, null);
-    			append_dev(div4, t8);
-    			append_dev(div4, div3);
+    			append_dev(div6, t8);
+    			append_dev(div6, div3);
     			append_dev(div3, img1);
     			append_dev(div3, t9);
     			append_dev(div3, div2);
@@ -4640,12 +4751,26 @@ var app = (function () {
     			append_dev(div2, h31);
     			append_dev(div2, t14);
     			if (if_block1) if_block1.m(div2, null);
+    			append_dev(div6, t15);
+    			append_dev(div6, div5);
+    			append_dev(div5, img2);
+    			append_dev(div5, t16);
+    			append_dev(div5, div4);
+    			append_dev(div4, h22);
+    			append_dev(h22, t17);
+    			append_dev(h22, br2);
+    			append_dev(h22, t18);
+    			append_dev(div4, t19);
+    			append_dev(div4, h32);
+    			append_dev(div4, t21);
+    			if (if_block2) if_block2.m(div4, null);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(div1, "click", /*click_handler*/ ctx[5], false, false, false),
-    					listen_dev(div3, "click", /*click_handler_1*/ ctx[6], false, false, false)
+    					listen_dev(div1, "click", /*click_handler*/ ctx[7], false, false, false),
+    					listen_dev(div3, "click", /*click_handler_1*/ ctx[8], false, false, false),
+    					listen_dev(div5, "click", /*click_handler_2*/ ctx[9], false, false, false)
     				];
 
     				mounted = true;
@@ -4660,7 +4785,7 @@ var app = (function () {
     						transition_in(if_block0, 1);
     					}
     				} else {
-    					if_block0 = create_if_block_1(ctx);
+    					if_block0 = create_if_block_2(ctx);
     					if_block0.c();
     					transition_in(if_block0, 1);
     					if_block0.m(div0, null);
@@ -4683,7 +4808,7 @@ var app = (function () {
     						transition_in(if_block1, 1);
     					}
     				} else {
-    					if_block1 = create_if_block(ctx);
+    					if_block1 = create_if_block_1(ctx);
     					if_block1.c();
     					transition_in(if_block1, 1);
     					if_block1.m(div2, null);
@@ -4697,22 +4822,48 @@ var app = (function () {
 
     				check_outros();
     			}
+
+    			if (/*opengit*/ ctx[2]) {
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
+
+    					if (dirty & /*opengit*/ 4) {
+    						transition_in(if_block2, 1);
+    					}
+    				} else {
+    					if_block2 = create_if_block(ctx);
+    					if_block2.c();
+    					transition_in(if_block2, 1);
+    					if_block2.m(div4, null);
+    				}
+    			} else if (if_block2) {
+    				group_outros();
+
+    				transition_out(if_block2, 1, 1, () => {
+    					if_block2 = null;
+    				});
+
+    				check_outros();
+    			}
     		},
     		i: function intro(local) {
     			if (current) return;
     			transition_in(if_block0);
     			transition_in(if_block1);
+    			transition_in(if_block2);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(if_block0);
     			transition_out(if_block1);
+    			transition_out(if_block2);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(section);
     			if (if_block0) if_block0.d();
     			if (if_block1) if_block1.d();
+    			if (if_block2) if_block2.d();
     			mounted = false;
     			run_all(dispose);
     		}
@@ -4732,14 +4883,16 @@ var app = (function () {
     function instance$4($$self, $$props, $$invalidate) {
     	let $_;
     	validate_store(X, "_");
-    	component_subscribe($$self, X, $$value => $$invalidate(2, $_ = $$value));
+    	component_subscribe($$self, X, $$value => $$invalidate(3, $_ = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("ClientWork", slots, []);
     	let berkeley = "images/sanfran.jpg";
     	let truck = "images/truck.jpg";
+    	let git = "images/git.jpg";
     	let { open } = $$props;
     	let { openibm } = $$props;
-    	const writable_props = ["open", "openibm"];
+    	let { opengit } = $$props;
+    	const writable_props = ["open", "openibm", "opengit"];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<ClientWork> was created with unknown prop '${key}'`);
@@ -4747,10 +4900,12 @@ var app = (function () {
 
     	const click_handler = () => $$invalidate(0, open = !open);
     	const click_handler_1 = () => $$invalidate(1, openibm = !openibm);
+    	const click_handler_2 = () => $$invalidate(2, opengit = !opengit);
 
     	$$self.$$set = $$props => {
     		if ("open" in $$props) $$invalidate(0, open = $$props.open);
     		if ("openibm" in $$props) $$invalidate(1, openibm = $$props.openibm);
+    		if ("opengit" in $$props) $$invalidate(2, opengit = $$props.opengit);
     	};
 
     	$$self.$capture_state = () => ({
@@ -4759,29 +4914,44 @@ var app = (function () {
     		scale,
     		berkeley,
     		truck,
+    		git,
     		open,
     		openibm,
+    		opengit,
     		$_
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ("berkeley" in $$props) $$invalidate(3, berkeley = $$props.berkeley);
-    		if ("truck" in $$props) $$invalidate(4, truck = $$props.truck);
+    		if ("berkeley" in $$props) $$invalidate(4, berkeley = $$props.berkeley);
+    		if ("truck" in $$props) $$invalidate(5, truck = $$props.truck);
+    		if ("git" in $$props) $$invalidate(6, git = $$props.git);
     		if ("open" in $$props) $$invalidate(0, open = $$props.open);
     		if ("openibm" in $$props) $$invalidate(1, openibm = $$props.openibm);
+    		if ("opengit" in $$props) $$invalidate(2, opengit = $$props.opengit);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [open, openibm, $_, berkeley, truck, click_handler, click_handler_1];
+    	return [
+    		open,
+    		openibm,
+    		opengit,
+    		$_,
+    		berkeley,
+    		truck,
+    		git,
+    		click_handler,
+    		click_handler_1,
+    		click_handler_2
+    	];
     }
 
     class ClientWork extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { open: 0, openibm: 1 });
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, { open: 0, openibm: 1, opengit: 2 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -4800,6 +4970,10 @@ var app = (function () {
     		if (/*openibm*/ ctx[1] === undefined && !("openibm" in props)) {
     			console.warn("<ClientWork> was created without expected prop 'openibm'");
     		}
+
+    		if (/*opengit*/ ctx[2] === undefined && !("opengit" in props)) {
+    			console.warn("<ClientWork> was created without expected prop 'opengit'");
+    		}
     	}
 
     	get open() {
@@ -4815,6 +4989,14 @@ var app = (function () {
     	}
 
     	set openibm(value) {
+    		throw new Error("<ClientWork>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get opengit() {
+    		throw new Error("<ClientWork>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set opengit(value) {
     		throw new Error("<ClientWork>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
@@ -4857,28 +5039,28 @@ var app = (function () {
     			img2 = element("img");
     			if (img0.src !== (img0_src_value = /*arrow*/ ctx[0])) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "north east arrow");
-    			attr_dev(img0, "class", "arrow svelte-ic3c4v");
+    			attr_dev(img0, "class", "arrow svelte-q2v2v6");
     			add_location(img0, file$3, 10, 12, 213);
     			attr_dev(a0, "href", "mailto:hej@xmo.se");
-    			attr_dev(a0, "class", "svelte-ic3c4v");
+    			attr_dev(a0, "class", "svelte-q2v2v6");
     			add_location(a0, file$3, 9, 8, 160);
     			if (img1.src !== (img1_src_value = /*arrow*/ ctx[0])) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "north east arrow");
-    			attr_dev(img1, "class", "arrow svelte-ic3c4v");
+    			attr_dev(img1, "class", "arrow svelte-q2v2v6");
     			add_location(img1, file$3, 13, 12, 363);
     			attr_dev(a1, "href", "https://www.linkedin.com/in/samueleksmo/");
-    			attr_dev(a1, "class", "svelte-ic3c4v");
+    			attr_dev(a1, "class", "svelte-q2v2v6");
     			add_location(a1, file$3, 12, 8, 290);
     			if (img2.src !== (img2_src_value = /*arrow*/ ctx[0])) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "north east arrow");
-    			attr_dev(img2, "class", "arrow svelte-ic3c4v");
+    			attr_dev(img2, "class", "arrow svelte-q2v2v6");
     			add_location(img2, file$3, 16, 12, 501);
     			attr_dev(a2, "href", "https://github.com/samueleksmo");
-    			attr_dev(a2, "class", "svelte-ic3c4v");
+    			attr_dev(a2, "class", "svelte-q2v2v6");
     			add_location(a2, file$3, 15, 8, 440);
-    			attr_dev(div0, "class", "linkwrapper svelte-ic3c4v");
+    			attr_dev(div0, "class", "linkwrapper svelte-q2v2v6");
     			add_location(div0, file$3, 8, 4, 126);
-    			attr_dev(div1, "class", "svelte-ic3c4v");
+    			attr_dev(div1, "class", "svelte-q2v2v6");
     			add_location(div1, file$3, 7, 0, 115);
     		},
     		l: function claim(nodes) {
@@ -4981,7 +5163,7 @@ var app = (function () {
     	let t8;
     	let t9;
     	let t10;
-    	let p;
+    	let p0;
     	let t11_value = /*$_*/ ctx[0]("p1") + "";
     	let t11;
     	let t12;
@@ -4990,6 +5172,10 @@ var app = (function () {
     	let t13_value = /*$_*/ ctx[0]("p2") + "";
     	let t13;
     	let t14;
+    	let h4;
+    	let t16;
+    	let p1;
+    	let t18;
     	let links;
     	let current;
     	links = new Links({ $$inline: true });
@@ -5014,28 +5200,38 @@ var app = (function () {
     			t8 = text(t8_value);
     			t9 = text(".");
     			t10 = space();
-    			p = element("p");
+    			p0 = element("p");
     			t11 = text(t11_value);
     			t12 = space();
     			br2 = element("br");
     			br3 = element("br");
     			t13 = text(t13_value);
     			t14 = space();
+    			h4 = element("h4");
+    			h4.textContent = "WORKED WITH";
+    			t16 = space();
+    			p1 = element("p");
+    			p1.textContent = "Python / Java / Javascript / React / Svelte / HTML / CSS / Docker / Kubernetes / Google Cloud / Azure / IBM Cloud";
+    			t18 = space();
     			create_component(links.$$.fragment);
     			add_location(br0, file$2, 8, 18, 161);
     			add_location(br1, file$2, 8, 23, 166);
     			add_location(u0, file$2, 8, 65, 208);
     			add_location(u1, file$2, 8, 100, 243);
-    			attr_dev(h3, "class", "svelte-17wfjag");
+    			attr_dev(h3, "class", "svelte-8gu066");
     			add_location(h3, file$2, 8, 1, 144);
     			add_location(br2, file$2, 10, 2, 297);
     			add_location(br3, file$2, 10, 6, 301);
-    			attr_dev(p, "class", "svelte-17wfjag");
-    			add_location(p, file$2, 9, 1, 279);
-    			attr_dev(div0, "class", "centerwrapper svelte-17wfjag");
+    			attr_dev(p0, "class", "svelte-8gu066");
+    			add_location(p0, file$2, 9, 1, 279);
+    			attr_dev(h4, "class", "svelte-8gu066");
+    			add_location(h4, file$2, 12, 1, 323);
+    			attr_dev(p1, "class", "languages svelte-8gu066");
+    			add_location(p1, file$2, 13, 1, 345);
+    			attr_dev(div0, "class", "centerwrapper svelte-8gu066");
     			add_location(div0, file$2, 7, 1, 115);
     			attr_dev(div1, "id", "about");
-    			attr_dev(div1, "class", "svelte-17wfjag");
+    			attr_dev(div1, "class", "svelte-8gu066");
     			add_location(div1, file$2, 6, 0, 97);
     		},
     		l: function claim(nodes) {
@@ -5060,13 +5256,17 @@ var app = (function () {
     			append_dev(u1, t8);
     			append_dev(h3, t9);
     			append_dev(div0, t10);
-    			append_dev(div0, p);
-    			append_dev(p, t11);
-    			append_dev(p, t12);
-    			append_dev(p, br2);
-    			append_dev(p, br3);
-    			append_dev(p, t13);
-    			append_dev(div1, t14);
+    			append_dev(div0, p0);
+    			append_dev(p0, t11);
+    			append_dev(p0, t12);
+    			append_dev(p0, br2);
+    			append_dev(p0, br3);
+    			append_dev(p0, t13);
+    			append_dev(div0, t14);
+    			append_dev(div0, h4);
+    			append_dev(div0, t16);
+    			append_dev(div0, p1);
+    			append_dev(div1, t18);
     			mount_component(links, div1, null);
     			current = true;
     		},

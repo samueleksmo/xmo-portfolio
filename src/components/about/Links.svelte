@@ -20,6 +20,10 @@
     
     
 <style>
+    @font-face{
+  	font-family: 'Yantramanav-Light';
+  		src: url('/fonts/Yantramanav-Light.woff2') format('woff2');
+	}
     .linkwrapper {
         margin: 0 auto;
         width:80%;
@@ -34,7 +38,7 @@
     a {
         margin-bottom: 1em;
         display: flex;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Yantramanav-Light', sans-serif;
         color:black;
         font-size: 1em;
         justify-content: center;
