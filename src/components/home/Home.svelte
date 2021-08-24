@@ -30,14 +30,14 @@
 	h1 {
 		font-size: 3em;
     	color: white;
-    	font-family: Oswald;
+    	font-family: 'Oswald';
     	font-weight: bold;
 		
 	}
 	h2 {
 		font-size: 2.6em;
     	color:white;
-    	font-family: Oswald;
+    	font-family: 'Oswald';
     	font-weight:bold;
 		
 	}

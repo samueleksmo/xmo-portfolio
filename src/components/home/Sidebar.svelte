@@ -31,7 +31,7 @@
         padding: 1em;
         padding-top: 0;
         color: #E56B6F;
-        font-family: Oswald;
+        font-family: 'Oswald';
         font-weight: bold;
     }
     p {
@@ -44,7 +44,7 @@
     a {
         margin-top: 1em;
         color: #E56B6F;
-        font-family: Oswald;
+        font-family: 'Oswald';
         scroll-behavior: smooth;
     }
     p:hover {

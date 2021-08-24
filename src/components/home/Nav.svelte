@@ -103,7 +103,7 @@ nav {
 .myLinks a {
     font-size: 28px;
     color: #E56B6F;
-    font-family: Oswald;
+    font-family: 'Oswald';
     font-weight: bold;
 }
 .hamburger {
@@ -175,7 +175,7 @@ nav {
     }
     .titleh1{
         font-size: 24px;
-        font-family: Oswald;
+        font-family: 'Oswald';
         font-weight: bold;
         margin-top: 0%;
         margin-bottom: 0%;
@@ -185,7 +185,7 @@ nav {
     }
     .titleh2{
         font-size: 18px;
-        font-family: Oswald;
+        font-family: 'Oswald';
         font-weight: bold;
         margin-top: -8px;
         margin-bottom: 0%;

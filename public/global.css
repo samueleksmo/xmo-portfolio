@@ -15,13 +15,18 @@ body {
 	font-family: 'Yantramanav-Light';
 		src: url("/fonts/Yantramanav-Light.woff2") format('woff2');
   }
+  @font-face{
+	font-family: 'Yantramanav-Bold';
+		src: url("/fonts/Yantramanav-Bold.ttf") format('ttf');
+  }
+
 @font-face{
 font-family: 'Oswald';
-	src: url("/fonts/Oswald-VariableFont_wght.woff2") format('woff2');
+	src: url("/fonts/Oswald-VariableFont_wght.ttf") format('ttf');
 }
 @font-face {
 	font-family: 'Oranienbaum';
-	  src: url('/fonts/Oranienbaum-Regular.woff2') format('woff2');
+	  src: url('/fonts/Oranienbaum-Regular.woff2') format('ttf');
 }
 a {
 	color: rgb(0,100,200);

@@ -95,11 +95,11 @@
 	}
 	h1 {
 		font-size: 3.5em;
-		font-family: 'Yantramanav-Light', sans-serif;
+		font-family: 'Yantramanav-Bold', sans-serif;
 		text-align: center;
 		margin-block-start: 0em;
     	margin-block-end: 0em;
-		font-weight:700;
+		font-weight:bold;
 		color: #FCFBFB;
 		letter-spacing: 5px;
 		padding-top: 1em;
