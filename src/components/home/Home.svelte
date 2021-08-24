@@ -18,10 +18,7 @@
 
 
 <style>
-	@font-face{
-  	font-family: 'Oswald';
-  		src: url('/fonts/Oswald-VariableFont_wght.woff2') format('woff2');
-	}
+
 	.home {
         background-image: url('/images/joutenheim.jpg');
         height: 100%;

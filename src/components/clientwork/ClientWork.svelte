@@ -72,15 +72,6 @@
 
 
 <style>
-	@font-face{
-  	font-family: 'Yantramanav-Light';
-  		src: url('/fonts/Yantramanav-Light.woff2') format('woff2');
-	}
-
-	@font-face {
-		font-family: 'Oranienbaum';
-  		src: url('/fonts/Oranienbaum-Regular.woff2') format('woff2');
-	}
 	section {
         background-color: #001219;
 		padding-top: 2em;		

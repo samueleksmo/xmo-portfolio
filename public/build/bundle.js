@@ -3480,7 +3480,7 @@ var app = (function () {
             "p2":"I also find Data Science facinating and have used Machine Learning techniques such as regression, classification, clustering and outlier detection in some of my projects, mainly in Python. I also love to explore and train my own creative style in whatever area that pequed my curiosity, be it webdesign, piano or lead climbing.",
             "p3":"During my time at university, I got the opportunity to do an exchange semester at UC Berkeley in California. While being part of a project group surrounding the exchange. I got the chance to develop its own website.",
             "p4":"During my time working as an it-consultant for IBM I was part of an exiting project at Volvo Trucks. Helping them utelize the power of their data with real time monitoring of trucks tier health. My role was centered around the data flow, frontend and DevOps part of the project. You can read more about it at Volvo Truck's own website.",
-            "p5":"This project was the final piece of a Machine Learning certification I took part in when I worked for IBM. The idea was to use time series analysis to forecast revenue prediction for the next 30 days for specific countries. The final model is a trained random-forest algorithm that forecasts the revenue of a country when called through a dummy (Flask) api running locally." 
+            "p5":"This project was the final piece of a Machine Learning certification I took part in when I worked for IBM. The idea was to use time series analysis to forecast revenue prediction for the next 30 days for specific countries. The final model is a trained random-forest algorithm that forecasts the revenue of a country when called through a (Flask) api running locally." 
           },
           sv: {
             "contact": "Kontakt",
@@ -3494,7 +3494,7 @@ var app = (function () {
             "p2":"Data Science är också något som jag känner ett starkt intresse för! Jag har främst använt enklare regression, klassifikation och kluster-modeller i mina (python) projekt. Jag tycker också om att utforska min egen kreativitet i olika områden som webdesign, piano och klättring.", 
             "p3":"Under min tid på Chalmers så fick jag möjlighet att åka på ett utbyte till UC Berkeley i San Francisco. Jag var också med i projektgruppen som hade ansvar för utbytet och fick på så sätt möjligheten att bygga utbytets egen hemsida helt på egen hand.",
             "p4":"Under min perioden som it-konsult på IBM så fick jag möjlighet att delta i ett nytt spännande projekt på Volvo Trucks. Mitt teams produkt extraherade värdeful infromation från lastbilarna i realtid. Min roll var centrerad kring dataflödet, frontend och DevOpsbitarna i projektet. Du kan läsa mer om projektet på Volvo Trucks egen hemsida.",
-            "p5":"IBM Capstone projektet var den sista steget i en Machine Learnings kurs jag tog under under tiden jag jobbade på IBM. I projektet skulle vi med hjälp av tidsserie-analys göra inkomstprediktioner för spefifika länder åt ett fiktivt företag. Den färdiga modellen är en random-forest algoritm som returnerar en 30 dagars prediktion på ett land när den kallas genom ett lokalt (Flask) api."  
+            "p5":"IBM Capstone projektet var den sista steget i en Machine Learnings kurs jag tog under under tiden jag jobbade på IBM. I projektet skulle vi med hjälp av tidsserie-analys göra inkomstprediktioner för specifika marknader (länder). Den färdiga modellen är en random-forest algoritm som returnerar en 30 dagars prediktion på ett land när den kallas genom ett lokalt (Flask) api."  
           },
 
         });
@@ -4289,14 +4289,14 @@ var app = (function () {
     			t2 = space();
     			h2 = element("h2");
     			h2.textContent = "Software Engineer";
-    			attr_dev(h1, "class", "mainheader svelte-o9x0zc");
+    			attr_dev(h1, "class", "mainheader svelte-wub4o9");
     			add_location(h1, file$5, 12, 2, 179);
-    			attr_dev(h2, "class", "mainheader softwareheader svelte-o9x0zc");
+    			attr_dev(h2, "class", "mainheader softwareheader svelte-wub4o9");
     			add_location(h2, file$5, 13, 2, 222);
-    			attr_dev(div0, "class", "softwarewrapper svelte-o9x0zc");
+    			attr_dev(div0, "class", "softwarewrapper svelte-wub4o9");
     			add_location(div0, file$5, 11, 1, 147);
     			attr_dev(div1, "id", "homepage");
-    			attr_dev(div1, "class", "home svelte-o9x0zc");
+    			attr_dev(div1, "class", "home svelte-wub4o9");
     			add_location(div1, file$5, 7, 0, 100);
     		},
     		l: function claim(nodes) {
@@ -4388,10 +4388,10 @@ var app = (function () {
     			t1 = space();
     			a = element("a");
     			a.textContent = "Check it out!";
-    			attr_dev(p, "class", "svelte-1akh483");
+    			attr_dev(p, "class", "svelte-8k9snh");
     			add_location(p, file$4, 23, 7, 619);
     			attr_dev(a, "href", "https://berkeleychalmers.se/");
-    			attr_dev(a, "class", "svelte-1akh483");
+    			attr_dev(a, "class", "svelte-8k9snh");
     			add_location(a, file$4, 27, 7, 671);
     			add_location(div, file$4, 22, 5, 566);
     		},
@@ -4457,10 +4457,10 @@ var app = (function () {
     			t1 = space();
     			a = element("a");
     			a.textContent = "Check it out!";
-    			attr_dev(p, "class", "svelte-1akh483");
+    			attr_dev(p, "class", "svelte-8k9snh");
     			add_location(p, file$4, 41, 7, 1063);
     			attr_dev(a, "href", "https://www.volvotrucks.com/en-en/news-stories/press-releases/2018/sep/pressrelease-180906.html");
-    			attr_dev(a, "class", "svelte-1akh483");
+    			attr_dev(a, "class", "svelte-8k9snh");
     			add_location(a, file$4, 45, 7, 1115);
     			add_location(div, file$4, 40, 5, 1010);
     		},
@@ -4526,10 +4526,10 @@ var app = (function () {
     			t1 = space();
     			a = element("a");
     			a.textContent = "Check it out!";
-    			attr_dev(p, "class", "svelte-1akh483");
+    			attr_dev(p, "class", "svelte-8k9snh");
     			add_location(p, file$4, 58, 7, 1567);
     			attr_dev(a, "href", "https://github.com/aavail/ai-workflow-capstone");
-    			attr_dev(a, "class", "svelte-1akh483");
+    			attr_dev(a, "class", "svelte-8k9snh");
     			add_location(a, file$4, 62, 7, 1619);
     			add_location(div, file$4, 57, 5, 1514);
     		},
@@ -4674,48 +4674,48 @@ var app = (function () {
     			h32.textContent = "Data Scientist";
     			t21 = space();
     			if (if_block2) if_block2.c();
-    			attr_dev(h1, "class", "svelte-1akh483");
+    			attr_dev(h1, "class", "svelte-8k9snh");
     			add_location(h1, file$4, 13, 1, 301);
     			if (img0.src !== (img0_src_value = /*berkeley*/ ctx[4])) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "xmo logo");
     			add_location(img0, file$4, 16, 3, 402);
     			add_location(br0, file$4, 18, 26, 495);
-    			attr_dev(h20, "class", "svelte-1akh483");
+    			attr_dev(h20, "class", "svelte-8k9snh");
     			add_location(h20, file$4, 18, 4, 473);
-    			attr_dev(h30, "class", "svelte-1akh483");
+    			attr_dev(h30, "class", "svelte-8k9snh");
     			add_location(h30, file$4, 19, 4, 520);
-    			attr_dev(div0, "class", "textwrapper svelte-1akh483");
+    			attr_dev(div0, "class", "textwrapper svelte-8k9snh");
     			add_location(div0, file$4, 17, 3, 443);
-    			attr_dev(div1, "class", "card svelte-1akh483");
+    			attr_dev(div1, "class", "card svelte-8k9snh");
     			add_location(div1, file$4, 15, 2, 349);
     			if (img1.src !== (img1_src_value = /*truck*/ ctx[5])) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "truck on road");
     			add_location(img1, file$4, 34, 3, 833);
     			add_location(br1, file$4, 36, 21, 923);
-    			attr_dev(h21, "class", "svelte-1akh483");
+    			attr_dev(h21, "class", "svelte-8k9snh");
     			add_location(h21, file$4, 36, 4, 906);
-    			attr_dev(h31, "class", "svelte-1akh483");
+    			attr_dev(h31, "class", "svelte-8k9snh");
     			add_location(h31, file$4, 37, 4, 959);
-    			attr_dev(div2, "class", "textwrapper svelte-1akh483");
+    			attr_dev(div2, "class", "textwrapper svelte-8k9snh");
     			add_location(div2, file$4, 35, 3, 876);
-    			attr_dev(div3, "class", "card svelte-1akh483");
+    			attr_dev(div3, "class", "card svelte-8k9snh");
     			add_location(div3, file$4, 33, 2, 774);
     			if (img2.src !== (img2_src_value = /*git*/ ctx[6])) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "calculator");
     			add_location(img2, file$4, 51, 3, 1341);
     			add_location(br2, file$4, 53, 21, 1426);
-    			attr_dev(h22, "class", "svelte-1akh483");
+    			attr_dev(h22, "class", "svelte-8k9snh");
     			add_location(h22, file$4, 53, 4, 1409);
-    			attr_dev(h32, "class", "svelte-1akh483");
+    			attr_dev(h32, "class", "svelte-8k9snh");
     			add_location(h32, file$4, 54, 4, 1462);
-    			attr_dev(div4, "class", "textwrapper svelte-1akh483");
+    			attr_dev(div4, "class", "textwrapper svelte-8k9snh");
     			add_location(div4, file$4, 52, 3, 1379);
-    			attr_dev(div5, "class", "card svelte-1akh483");
+    			attr_dev(div5, "class", "card svelte-8k9snh");
     			add_location(div5, file$4, 50, 2, 1282);
-    			attr_dev(div6, "class", "cardwrapper svelte-1akh483");
+    			attr_dev(div6, "class", "cardwrapper svelte-8k9snh");
     			add_location(div6, file$4, 14, 1, 321);
     			attr_dev(section, "id", "portfolio");
-    			attr_dev(section, "class", "svelte-1akh483");
+    			attr_dev(section, "class", "svelte-8k9snh");
     			add_location(section, file$4, 12, 0, 275);
     		},
     		l: function claim(nodes) {
@@ -5039,29 +5039,29 @@ var app = (function () {
     			img2 = element("img");
     			if (img0.src !== (img0_src_value = /*arrow*/ ctx[0])) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "north east arrow");
-    			attr_dev(img0, "class", "arrow svelte-q2v2v6");
-    			add_location(img0, file$3, 10, 12, 213);
+    			attr_dev(img0, "class", "arrow svelte-1urg10d");
+    			add_location(img0, file$3, 9, 12, 208);
     			attr_dev(a0, "href", "mailto:hej@xmo.se");
-    			attr_dev(a0, "class", "svelte-q2v2v6");
-    			add_location(a0, file$3, 9, 8, 160);
+    			attr_dev(a0, "class", "svelte-1urg10d");
+    			add_location(a0, file$3, 8, 8, 155);
     			if (img1.src !== (img1_src_value = /*arrow*/ ctx[0])) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "north east arrow");
-    			attr_dev(img1, "class", "arrow svelte-q2v2v6");
-    			add_location(img1, file$3, 13, 12, 363);
+    			attr_dev(img1, "class", "arrow svelte-1urg10d");
+    			add_location(img1, file$3, 12, 12, 358);
     			attr_dev(a1, "href", "https://www.linkedin.com/in/samueleksmo/");
-    			attr_dev(a1, "class", "svelte-q2v2v6");
-    			add_location(a1, file$3, 12, 8, 290);
+    			attr_dev(a1, "class", "svelte-1urg10d");
+    			add_location(a1, file$3, 11, 8, 285);
     			if (img2.src !== (img2_src_value = /*arrow*/ ctx[0])) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "north east arrow");
-    			attr_dev(img2, "class", "arrow svelte-q2v2v6");
-    			add_location(img2, file$3, 16, 12, 501);
+    			attr_dev(img2, "class", "arrow svelte-1urg10d");
+    			add_location(img2, file$3, 15, 12, 496);
     			attr_dev(a2, "href", "https://github.com/samueleksmo");
-    			attr_dev(a2, "class", "svelte-q2v2v6");
-    			add_location(a2, file$3, 15, 8, 440);
-    			attr_dev(div0, "class", "linkwrapper svelte-q2v2v6");
-    			add_location(div0, file$3, 8, 4, 126);
-    			attr_dev(div1, "class", "svelte-q2v2v6");
-    			add_location(div1, file$3, 7, 0, 115);
+    			attr_dev(a2, "class", "svelte-1urg10d");
+    			add_location(a2, file$3, 14, 8, 435);
+    			attr_dev(div0, "class", "linkwrapper svelte-1urg10d");
+    			add_location(div0, file$3, 7, 4, 121);
+    			attr_dev(div1, "class", "svelte-1urg10d");
+    			add_location(div1, file$3, 6, 0, 110);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5218,20 +5218,20 @@ var app = (function () {
     			add_location(br1, file$2, 8, 23, 166);
     			add_location(u0, file$2, 8, 65, 208);
     			add_location(u1, file$2, 8, 100, 243);
-    			attr_dev(h3, "class", "svelte-8gu066");
+    			attr_dev(h3, "class", "svelte-1xmbzt2");
     			add_location(h3, file$2, 8, 1, 144);
     			add_location(br2, file$2, 10, 2, 297);
     			add_location(br3, file$2, 10, 6, 301);
-    			attr_dev(p0, "class", "svelte-8gu066");
+    			attr_dev(p0, "class", "svelte-1xmbzt2");
     			add_location(p0, file$2, 9, 1, 279);
-    			attr_dev(h4, "class", "svelte-8gu066");
+    			attr_dev(h4, "class", "svelte-1xmbzt2");
     			add_location(h4, file$2, 12, 1, 323);
-    			attr_dev(p1, "class", "languages svelte-8gu066");
+    			attr_dev(p1, "class", "languages svelte-1xmbzt2");
     			add_location(p1, file$2, 13, 1, 345);
-    			attr_dev(div0, "class", "centerwrapper svelte-8gu066");
+    			attr_dev(div0, "class", "centerwrapper svelte-1xmbzt2");
     			add_location(div0, file$2, 7, 1, 115);
     			attr_dev(div1, "id", "about");
-    			attr_dev(div1, "class", "svelte-8gu066");
+    			attr_dev(div1, "class", "svelte-1xmbzt2");
     			add_location(div1, file$2, 6, 0, 97);
     		},
     		l: function claim(nodes) {

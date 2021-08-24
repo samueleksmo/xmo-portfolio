@@ -21,10 +21,7 @@ import Links from './Links.svelte'
 
 
 <style>
-	@font-face{
-  	font-family: 'Yantramanav-Light';
-  		src: url('/fonts/Yantramanav-Light.woff2') format('woff2');
-	}
+
 	.languages{
 		font-size: 16px;
 		margin-top: 0px;
