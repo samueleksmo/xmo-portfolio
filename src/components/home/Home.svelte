@@ -28,7 +28,7 @@
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 2.9em;
     	color: white;
     	font-family: 'Oswald';
     	font-weight: bold;
@@ -52,7 +52,7 @@
 	}
 	.softwareheader {
 		padding-left: 16px;
-		letter-spacing: 0.44em;
+		letter-spacing: 0.42em;
 		line-height: 44px; 
 		color: #E56B6F;
 	}
@@ -72,9 +72,9 @@
 
 
 	@media (min-width: 1366px) {
-        div {
-        /* height: 1920px; */
-        background-size: 100% auto;
+
+        div {	
+        background-size: 100%;	
 		}
 
 		.softwarewrapper {

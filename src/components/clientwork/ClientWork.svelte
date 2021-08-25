@@ -4,9 +4,9 @@
 	let berkeley = 'images/sanfran.jpg';
 	let truck = 'images/truck.jpg';
 	let git = 'images/git.jpg';
-	export let open;
-	export let openibm;
-	export let opengit;
+	let open;
+	let openibm;
+	let opengit;
 </script>
 
 

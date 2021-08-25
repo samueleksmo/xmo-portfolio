@@ -43,7 +43,31 @@
         margin-left: 0.3em;
         height: 18px;
     }
-    @media (min-width: 1336px) {
+    @media (min-width: 475px) {
+
+        .linkwrapper {
+        margin: 0 auto;
+        width:80%;
+    }
+    div {
+    
+        text-align: left;
+        justify-content: left;
+        flex-direction: row;
+    }
+
+    
+    a {
+       margin-right: 2em;
+        
+        
+    }
+    .arrow {
+        margin-left: 0.3em;
+        height: 18px;
+    }
+    }
+    @media (min-width: 1366px) {
     .linkwrapper {
         margin: 0 auto;
         width:800px;

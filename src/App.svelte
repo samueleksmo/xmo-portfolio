@@ -14,7 +14,7 @@
 	<About/>
 	<ClientWork/>
 	<Footer
-	value={$locale}
+	
 	on:locale-changed={e => setupI18n({ withLocale: e.detail }) }
 	/>
 	
