@@ -17,7 +17,7 @@ import {
 <section id="contact">
     <div class="footerwrapper">
         <img src={xmologo} alt="xmo logo"  class="footerlogo">
-        <a href="mailto:hej@xmo.com">hej@xmo.se</a>
+        <a href="mailto:hej@xmo.se">hej@xmo.se</a>
         <div class="langue">
             <button class:active={active} on:click={() => switchLocale("en")}>ENG</button>
             <p>&nbsp</p>

@@ -16,14 +16,16 @@
             <a href="#portfolio">{$_('portfolio')}</a>
             <a href="#contact">{$_('contact')}</a>
         </p>
+
     </div>
     {#if y > 200}
-    <hr transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
+    <hr transition:scale={{ duration: 750, easing: quadOut, opacity: 0.2 }} />
     {/if}
 {/if}
 
 <style>
     div {
+        background-color: rgba(0, 0, 0, 0.2);
         display: block;
         text-align: center;
         font-size: 28px;
@@ -34,10 +36,13 @@
         font-family: 'Oswald';
         font-weight: bold;
     }
+    hr {
+        margin: 0;
+    }
     p {
         cursor: pointer;
         width: max-content;
-        margin: 1rem auto;
+        margin: auto;
         display: flex;
         flex-direction: column;
     }
@@ -46,8 +51,5 @@
         color: #E56B6F;
         font-family: 'Oswald';
         scroll-behavior: smooth;
-    }
-    p:hover {
-        text-decoration: underline;
     }
 </style>

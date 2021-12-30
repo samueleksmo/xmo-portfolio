@@ -3541,17 +3541,17 @@ var app = (function () {
     			if (if_block) if_block.c();
     			if_block_anchor = empty();
     			attr_dev(a0, "href", "#about");
-    			attr_dev(a0, "class", "svelte-1tdx0o");
+    			attr_dev(a0, "class", "svelte-1cu5xt9");
     			add_location(a0, file$7, 14, 12, 322);
     			attr_dev(a1, "href", "#portfolio");
-    			attr_dev(a1, "class", "svelte-1tdx0o");
+    			attr_dev(a1, "class", "svelte-1cu5xt9");
     			add_location(a1, file$7, 15, 12, 369);
     			attr_dev(a2, "href", "#contact");
-    			attr_dev(a2, "class", "svelte-1tdx0o");
+    			attr_dev(a2, "class", "svelte-1cu5xt9");
     			add_location(a2, file$7, 16, 12, 424);
-    			attr_dev(p, "class", "svelte-1tdx0o");
+    			attr_dev(p, "class", "svelte-1cu5xt9");
     			add_location(p, file$7, 13, 8, 267);
-    			attr_dev(div, "class", "svelte-1tdx0o");
+    			attr_dev(div, "class", "svelte-1cu5xt9");
     			add_location(div, file$7, 12, 4, 253);
     		},
     		m: function mount(target, anchor) {
@@ -3635,7 +3635,7 @@ var app = (function () {
     	return block;
     }
 
-    // (20:4) {#if y > 200}
+    // (21:4) {#if y > 200}
     function create_if_block_1$1(ctx) {
     	let hr;
     	let hr_transition;
@@ -3644,7 +3644,8 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			hr = element("hr");
-    			add_location(hr, file$7, 20, 4, 509);
+    			attr_dev(hr, "class", "svelte-1cu5xt9");
+    			add_location(hr, file$7, 21, 4, 510);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, hr, anchor);
@@ -3663,7 +3664,7 @@ var app = (function () {
     					{
     						duration: 750,
     						easing: quadOut,
-    						opacity: 1
+    						opacity: 0.2
     					},
     					true
     				);
@@ -3680,7 +3681,7 @@ var app = (function () {
     				{
     					duration: 750,
     					easing: quadOut,
-    					opacity: 1
+    					opacity: 0.2
     				},
     				false
     			);
@@ -3698,7 +3699,7 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(20:4) {#if y > 200}",
+    		source: "(21:4) {#if y > 200}",
     		ctx
     	});
 
@@ -5331,19 +5332,19 @@ var app = (function () {
     			attr_dev(img, "alt", "xmo logo");
     			attr_dev(img, "class", "footerlogo svelte-1r7s0ya");
     			add_location(img, file$1, 18, 8, 392);
-    			attr_dev(a, "href", "mailto:hej@xmo.com");
+    			attr_dev(a, "href", "mailto:hej@xmo.se");
     			attr_dev(a, "class", "svelte-1r7s0ya");
     			add_location(a, file$1, 19, 8, 455);
     			attr_dev(button0, "class", "svelte-1r7s0ya");
     			toggle_class(button0, "active", /*active*/ ctx[0]);
-    			add_location(button0, file$1, 21, 12, 540);
+    			add_location(button0, file$1, 21, 12, 539);
     			attr_dev(p, "class", "svelte-1r7s0ya");
-    			add_location(p, file$1, 22, 12, 631);
+    			add_location(p, file$1, 22, 12, 630);
     			attr_dev(button1, "class", "svelte-1r7s0ya");
     			toggle_class(button1, "active", !/*active*/ ctx[0]);
-    			add_location(button1, file$1, 23, 12, 656);
+    			add_location(button1, file$1, 23, 12, 655);
     			attr_dev(div0, "class", "langue svelte-1r7s0ya");
-    			add_location(div0, file$1, 20, 8, 507);
+    			add_location(div0, file$1, 20, 8, 506);
     			attr_dev(div1, "class", "footerwrapper svelte-1r7s0ya");
     			add_location(div1, file$1, 17, 4, 356);
     			attr_dev(section, "id", "contact");
