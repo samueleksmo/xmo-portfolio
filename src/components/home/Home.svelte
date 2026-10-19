@@ -1,7 +1,5 @@
 <script>
-    import Nav from './Nav.svelte'
-	import { _ } from '../../services/i18n';
-	
+	import Nav from './Nav.svelte';
 </script>
 
 
@@ -20,8 +18,15 @@
 <style>
 
 	.home {
-        background-image: url('/images/joutenheim.jpg');
-        height: 100%;
+		background-color: #3a4a52;
+		background-image: url('/images/joutenheim.jpg');
+		background-image: image-set(
+			url('/images/joutenheim.webp') type('image/webp'),
+			url('/images/joutenheim.jpg') type('image/jpeg')
+		);
+		background-size: cover;
+		background-position: 34% center;
+		height: 100%;
 		margin: 0 auto;
         background-repeat: no-repeat;
 		text-align: center;
@@ -73,9 +78,6 @@
 
 	@media (min-width: 1366px) {
 
-        div {	
-        background-size: 100%;	
-		}
 
 		.softwarewrapper {
 			display: none;

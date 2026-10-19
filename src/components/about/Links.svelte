@@ -1,19 +1,20 @@
 <script>
     import { _ } from '../../services/i18n';
-    let arrow = 'images/arrow.svg';
+    const arrow = '/images/arrow.svg';
 </script>
     
     
 <div >
     <div class="linkwrapper">
-        <a href="mailto:hej@xmo.se">GET IN TOUCH
-            <img src={arrow} alt="north east arrow"  class="arrow">
+        <a href="mailto:hej@xmo.se">{$_('get_in_touch')}
+            <img src={arrow} alt="" class="arrow">
         </a>
-        <a href="https://www.linkedin.com/in/samueleksmo/">LINKED IN
-            <img src={arrow} alt="north east arrow"  class="arrow"></a>
-        
-        <a href="https://github.com/samueleksmo" >GITHUB
-            <img src={arrow} alt="north east arrow"  class="arrow"></a>
+        <a href="https://www.linkedin.com/in/samueleksmo/">LINKEDIN
+            <img src={arrow} alt="" class="arrow">
+        </a>
+        <a href="https://github.com/samueleksmo">GITHUB
+            <img src={arrow} alt="" class="arrow">
+        </a>
     </div>
 </div>
     

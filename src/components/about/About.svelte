@@ -1,6 +1,6 @@
 <script>
-import { _ } from '../../services/i18n';
-import Links from './Links.svelte'
+	import { _ } from '../../services/i18n';
+	import Links from './Links.svelte';
 </script>
 
 
@@ -10,7 +10,7 @@ import Links from './Links.svelte'
 	<p>{$_('p1')}  
 		<br><br>{$_('p2')}
 	</p>
-	<h4>WORKED WITH</h4>
+	<h4>{$_('worked_with')}</h4>
 	<p class="languages">
 		Python / Java / Javascript / React / Svelte / HTML / CSS / Docker / Kubernetes / Google Cloud / Azure / IBM Cloud
 	</p>

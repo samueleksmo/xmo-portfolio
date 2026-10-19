@@ -5,16 +5,17 @@
 
     export let open;
     let y;
-    
+
+    const close = () => (open = false);
 </script>
-<svelte:window bind:innerHeight={y}/>
+<svelte:window bind:innerHeight={y} on:keydown={(e) => e.key === 'Escape' && close()}/>
 
 {#if open}
-    <div>
+    <div id="mobile-menu">
         <p transition:fly={{ y: -15, delay: 50 }}>
-            <a href="#about">{$_('about')}</a>
-            <a href="#portfolio">{$_('portfolio')}</a>
-            <a href="#contact">{$_('contact')}</a>
+            <a href="#about" on:click={close}>{$_('about')}</a>
+            <a href="#portfolio" on:click={close}>{$_('portfolio')}</a>
+            <a href="#contact" on:click={close}>{$_('contact')}</a>
         </p>
 
     </div>

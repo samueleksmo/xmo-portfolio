@@ -1,26 +1,32 @@
 <script>
-    import Sidebar from './Sidebar.svelte'
-    let hamburger = 'images/hamburger.svg';
-    let xmologo = 'images/xmo_logored.svg';
+    import Sidebar from './Sidebar.svelte';
     import { _ } from '../../services/i18n';
- 
     import { fly } from 'svelte/transition';
-    export let open = false
+
+    const hamburger = '/images/hamburger.svg';
+    const xmologo = '/images/xmo_logored.svg';
+
+    export let open = false;
     let y;
-
-
 </script>
 
 <svelte:window bind:scrollY={y}/>
 <nav class="smallscreen">
         <div class="topnavwrapper">
             <div class="rapper">
-            <a href="#homepage" >
-                <img src={xmologo} alt="xmo logo"  class="logo">
+            <a href="#homepage" aria-label={$_('back_to_top')}>
+                <img src={xmologo} alt="" class="logo">
             </a>
-             <a href={'#!'}  on:click={() => open = !open} > 
-                <img src={hamburger} alt="hamburger menu" class="hamburger">
-            </a>
+            <button
+                type="button"
+                class="menubutton"
+                aria-label={open ? $_('close_menu') : $_('open_menu')}
+                aria-expanded={open}
+                aria-controls="mobile-menu"
+                on:click={() => (open = !open)}
+            >
+                <img src={hamburger} alt="" class="hamburger">
+            </button>
             </div>
             <div class="navwrapper">
                 <Sidebar bind:open/>
@@ -35,8 +41,8 @@
     <div class="topnav">
      
             <div class="logowrapper">
-                <a href="#homepage">
-                    <img src={xmologo} alt="xmo logo"  class="logo">
+                <a href="#homepage" aria-label={$_('back_to_top')}>
+                    <img src={xmologo} alt="" class="logo">
                 </a>
                 {#if y < 500}
                 <div class="titlewrapper" transition:fly={{ y:-100, duration: 200, opacity: 1 }}>
@@ -106,6 +112,15 @@ nav {
     font-family: 'Oswald';
     font-weight: bold;
 }
+.menubutton {
+    all: unset;
+    cursor: pointer;
+    line-height: 0;
+}
+.menubutton:focus-visible {
+    outline: 2px solid #E56B6F;
+    outline-offset: 3px;
+}
 .hamburger {
     width: 2.8em;
     padding-top: 0.4em;
@@ -171,7 +186,7 @@ nav {
     }
     .titlewrapper {
         margin-top: 73px;
-        margin-left: -14px;;
+        margin-left: -14px;
     }
     .titleh1{
         font-size: 24px;

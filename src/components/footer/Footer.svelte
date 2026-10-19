@@ -1,78 +1,79 @@
 <script>
-let active = false;
-let xmologo = 'images/xmo_logo.svg';
-import {
-      createEventDispatcher
-    } from 'svelte';
-    const dispatch = createEventDispatcher();
-  
-    function switchLocale(language) {
-    //   event.preventDefault();
-      dispatch('locale-changed',language);
-      active = !active;
-    }
+	import { _, locale } from '../../services/i18n';
+
+	const xmologo = '/images/xmo_logo.svg';
+	const languages = [
+		{ code: 'en', label: 'ENG' },
+		{ code: 'sv', label: 'SWE' }
+	];
 </script>
 
-
-<section id="contact">
-    <div class="footerwrapper">
-        <img src={xmologo} alt="xmo logo"  class="footerlogo">
-        <a href="mailto:hej@xmo.se">hej@xmo.se</a>
-        <div class="langue">
-            <button class:active={active} on:click={() => switchLocale("en")}>ENG</button>
-            <p>&nbsp</p>
-            <button class:active={!active} on:click={() => switchLocale("sv")}>SWE</button>
-        </div>
-    </div>
-</section>
-
+<footer id="contact">
+	<div class="footerwrapper">
+		<img src={xmologo} alt="Xmo" class="footerlogo" />
+		<a href="mailto:hej@xmo.se">hej@xmo.se</a>
+		<div class="langue" role="group" aria-label={$_('switch_language')}>
+			{#each languages as lang, i}
+				{#if i > 0}<span aria-hidden="true">/</span>{/if}
+				<button
+					type="button"
+					lang={lang.code}
+					class:inactive={$locale !== lang.code}
+					aria-pressed={$locale === lang.code}
+					on:click={() => locale.set(lang.code)}>{lang.label}</button
+				>
+			{/each}
+		</div>
+	</div>
+</footer>
 
 <style>
-    .active {
+	footer {
+		background-color: #FCFBFB;
+		height: 100px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		padding-top: 60px;
+	}
+	.footerwrapper {
+		width: 90%;
+		justify-content: space-between;
+		display: flex;
+	}
+	.footerlogo {
+		height: 58px;
+		margin-right: -20px;
+	}
+	a {
+		margin-top: 1.2em;
+		color: #828080;
+	}
+	.langue {
+		display: flex;
+		align-items: baseline;
+		gap: 0.4em;
+		margin-top: 1.2em;
+	}
+	button {
+		height: auto;
+		width: auto;
+		border: none;
+		background: #FCFBFB;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+		color: #333;
+	}
+	button.inactive {
 		color: #C4C4C4;
 	}
-    section {
-        background-color: #FCFBFB;
-        height: 100px;
-        background-repeat: no-repeat;
-		text-align: center;
-        display: flex;
-        justify-content: center;
-        padding-top: 60px;
-    }
-	.footerwrapper {
-        width: 90%;
-        justify-content: space-between;
-        display: flex;
+	span {
+		color: #C4C4C4;
 	}
-    .footerlogo {
-        height: 58px;
-        margin-right: -20px;
-        
-    }
-    a {
-        margin-top: 1.2em;
-        color: #828080;
-   
-    }
-    button {
-        height:1em;
-        width: auto;
-        border:none;
-        background: #FCFBFB;
-        margin: 1.3em 0 0 0;
-        padding: 0 0 0 0;
-    }
-    .langue{
-        display: flex;
-        justify-content: space-between;
-    }
-    p{
-        margin-top: 1.2em;
-    }
 	@media (min-width: 1366px) {
-        .footerwrapper {
-        width: 40%;
-	    }
+		.footerwrapper {
+			width: 40%;
+		}
 	}
 </style>
