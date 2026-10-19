@@ -4,7 +4,7 @@ Personal portfolio site for Samuel Eksmo — [xmo.se](https://xmo.se). A single-
 
 ## Development
 
-Requires Node.js 20.19+ (CI and Docker use Node 24).
+Requires Node.js 20.19+ (Vercel builds with Node 24).
 
 ```bash
 npm install
@@ -23,11 +23,6 @@ npm run preview   # serve the built dist/ locally
 
 ## Deployment
 
-`Dockerfile` builds the site and serves `dist/` with nginx on port 80:
+Hosted on [Vercel](https://vercel.com). Every push to `master` deploys to production; other branches and pull requests get preview deployments.
 
-```bash
-docker build -t xmorepo .
-docker run -p 8080:80 xmorepo
-```
-
-GitHub Actions (`.github/workflows/docker.yml`) builds every push and pull request. Pushes to `master` also publish `<DOCKER_USERNAME>/xmorepo:latest` and `:<commit sha>` to Docker Hub, using the `DOCKER_USERNAME` and `DOCKER_PASSWORD` repository secrets.
+Build settings live in `vercel.json` (Vite, `npm run build`, output `dist/`), and the Node.js version is pinned to 24.x via `engines` in `package.json`.
