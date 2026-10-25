@@ -33,7 +33,7 @@
 			subtitle: 'berkeley_subtitle',
 			role: 'berkeley_role',
 			text: 'p3',
-			link: 'https://berkeleychalmers.se/'
+			link: 'https://www.berkeleychalmers.se/'
 		},
 		{
 			id: 'volvo',
