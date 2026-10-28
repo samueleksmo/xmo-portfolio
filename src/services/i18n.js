@@ -18,6 +18,10 @@ const en = {
 	back_to_top: 'Xmo – back to top',
 	switch_language: 'Language',
 
+	ekmon_subtitle: 'Company Website',
+	ekmon_role: 'Designer & Developer',
+	ekmon_alt: 'Ekmon logo over a misty pine forest',
+	ekmon_text: "A new website for Ekmon AB, a Norrköping-based consultancy in music, IT and accounting that also invests in green, sustainable companies. I designed and built it as a bilingual single-page Svelte site – the company, the projects it has founded or invested in, and contact details – that picks the language from the visitor's browser and keeps the email address out of reach of spam bots.",
 	ekudden_subtitle: 'Sauna Website',
 	ekudden_role: 'Designer & Developer',
 	ekudden_alt: 'Red sauna cabin by the water in evening sun',
@@ -64,6 +68,10 @@ const sv = {
 	back_to_top: 'Xmo – till toppen',
 	switch_language: 'Språk',
 
+	ekmon_subtitle: 'Företagshemsida',
+	ekmon_role: 'Designer & utvecklare',
+	ekmon_alt: 'Ekmons logotyp över en dimmig barrskog',
+	ekmon_text: 'En ny hemsida för Ekmon AB, ett konsultbolag i Norrköping inom musik, IT och ekonomi som också investerar i gröna och hållbara företag. Jag har designat och byggt den som en tvåspråkig Svelte-sajt på en sida – om bolaget, projekten det har startat eller investerat i, och kontaktuppgifter – som väljer språk utifrån besökarens webbläsare och håller e-postadressen undan från spambotar.',
 	ekudden_subtitle: 'Bastuhemsida',
 	ekudden_role: 'Designer & utvecklare',
 	ekudden_alt: 'Röd bastustuga vid vattnet i kvällssol',

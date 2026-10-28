@@ -6,6 +6,16 @@
 	// Newest first.
 	const projects = [
 		{
+			id: 'ekmon',
+			image: 'ekmon',
+			alt: 'ekmon_alt',
+			title: 'Ekmon AB',
+			subtitle: 'ekmon_subtitle',
+			role: 'ekmon_role',
+			text: 'ekmon_text',
+			link: 'https://ekmon.se/'
+		},
+		{
 			id: 'ekudden',
 			image: 'ekudden',
 			alt: 'ekudden_alt',
