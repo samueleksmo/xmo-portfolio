@@ -6,7 +6,7 @@
     
 <div >
     <div class="linkwrapper">
-        <a href="mailto:hej@xmo.se">{$_('get_in_touch')}
+        <a href="#contact">{$_('get_in_touch')}
             <img src={arrow} alt="" class="arrow">
         </a>
         <a href="https://www.linkedin.com/in/samueleksmo/">LINKEDIN

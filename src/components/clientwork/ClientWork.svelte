@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import { _ } from '../../services/i18n';
 	import { fly } from 'svelte/transition';
 
@@ -70,27 +70,59 @@
 	let open = {};
 	const toggle = (id) => (open = { ...open, [id]: !open[id] });
 
-	// Horizontal scrolling (desktop only – on small screens the cards stack vertically).
+	// Horizontal, endlessly looping carousel (desktop only – on small screens the
+	// cards stack vertically). On desktop the cards are rendered three times; the
+	// middle copy is the "real" one. Whenever scrolling settles in the first or
+	// last copy, the position is moved by exactly one set width, which looks
+	// identical, so you can keep going left or right forever.
 	let scroller;
-	let atStart = true;
-	let atEnd = false;
+	let desktop = false;
+	let settleTimer;
 
-	function updateEnds() {
-		if (!scroller) return;
-		atStart = scroller.scrollLeft <= 4;
-		atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 4;
+	$: copies = desktop ? [0, 1, 2] : [1];
+
+	function cardStep() {
+		const card = scroller && scroller.querySelector('.card');
+		if (!card) return 0;
+		return card.getBoundingClientRect().width + (parseFloat(getComputedStyle(scroller).columnGap) || 0);
+	}
+
+	function recenter() {
+		if (!desktop || !scroller) return;
+		const setWidth = projects.length * cardStep();
+		if (!setWidth) return;
+		const x = scroller.scrollLeft;
+		if (x < setWidth - 1) scroller.scrollLeft = x + setWidth;
+		else if (x >= 2 * setWidth - 1) scroller.scrollLeft = x - setWidth;
+	}
+
+	function onScroll() {
+		clearTimeout(settleTimer);
+		settleTimer = setTimeout(recenter, 150);
 	}
 
 	function scrollCards(direction) {
-		const card = scroller.querySelector('.card');
-		const step = card ? card.getBoundingClientRect().width + parseFloat(getComputedStyle(scroller).columnGap || 0) : 300;
-		scroller.scrollBy({ left: direction * step, behavior: 'smooth' });
+		scroller.scrollBy({ left: direction * (cardStep() || 300), behavior: 'smooth' });
 	}
 
-	onMount(updateEnds);
+	onMount(() => {
+		const mq = window.matchMedia('(min-width: 1200px)');
+		const apply = async () => {
+			desktop = mq.matches;
+			await tick();
+			if (desktop) scroller.scrollLeft = 0;
+			recenter();
+		};
+		apply();
+		mq.addEventListener('change', apply);
+		return () => {
+			mq.removeEventListener('change', apply);
+			clearTimeout(settleTimer);
+		};
+	});
 </script>
 
-<svelte:window on:resize={updateEnds} />
+<svelte:window on:resize={recenter} />
 
 <section id="portfolio">
 	<h1>{$_('portfolio_heading')}</h1>
@@ -99,47 +131,51 @@
 			type="button"
 			class="arrow prev"
 			aria-label={$_('previous_projects')}
-			disabled={atStart}
 			on:click={() => scrollCards(-1)}
 		>
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
 		</button>
 
-		<div class="cardwrapper" bind:this={scroller} on:scroll={updateEnds}>
-			{#each projects as project (project.id)}
-				<article class="card">
-					<button
-						type="button"
-						class="cardtoggle"
-						aria-expanded={!!open[project.id]}
-						aria-controls="{project.id}-details"
-						on:click={() => toggle(project.id)}
-					>
-						<picture>
-							<source srcset="/images/{project.image}.webp" type="image/webp" />
-							<img
-								src="/images/{project.image}.jpg"
-								alt={$_(project.alt)}
-								width="300"
-								height="450"
-								loading="lazy"
-							/>
-						</picture>
-						<span class="textwrapper">
-							<span class="title">{project.title} <br /> // {$_(project.subtitle)}</span>
-							<span class="role">{$_(project.role)}</span>
-						</span>
-					</button>
+		<div class="cardwrapper" bind:this={scroller} on:scroll={onScroll} on:scrollend={recenter}>
+			{#each copies as copy (copy)}
+				{#each projects as project (project.id)}
+					{@const clone = copy !== 1}
+					{@const uid = clone ? `${project.id}-${copy}` : project.id}
+					<article class="card" aria-hidden={clone ? 'true' : undefined}>
+						<button
+							type="button"
+							class="cardtoggle"
+							tabindex={clone ? -1 : undefined}
+							aria-expanded={!!open[project.id]}
+							aria-controls="{uid}-details"
+							on:click={() => toggle(project.id)}
+						>
+							<picture>
+								<source srcset="/images/{project.image}.webp" type="image/webp" />
+								<img
+									src="/images/{project.image}.jpg"
+									alt={$_(project.alt)}
+									width="300"
+									height="450"
+									loading="lazy"
+								/>
+							</picture>
+							<span class="textwrapper">
+								<span class="title">{project.title} <br /> // {$_(project.subtitle)}</span>
+								<span class="role">{$_(project.role)}</span>
+							</span>
+						</button>
 
-					<div id="{project.id}-details" class="textwrapper">
-						{#if open[project.id]}
-							<div transition:fly={{ y: -15, delay: 50 }}>
-								<p>{$_(project.text)}</p>
-								<a href={project.link}>{$_('check_it_out')}</a>
-							</div>
-						{/if}
-					</div>
-				</article>
+						<div id="{uid}-details" class="textwrapper">
+							{#if open[project.id]}
+								<div transition:fly={{ y: -15, delay: 50 }}>
+									<p>{$_(project.text)}</p>
+									<a href={project.link} tabindex={clone ? -1 : undefined}>{$_('check_it_out')}</a>
+								</div>
+							{/if}
+						</div>
+					</article>
+				{/each}
 			{/each}
 		</div>
 
@@ -147,7 +183,6 @@
 			type="button"
 			class="arrow next"
 			aria-label={$_('next_projects')}
-			disabled={atEnd}
 			on:click={() => scrollCards(1)}
 		>
 			<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>

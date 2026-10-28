@@ -8,10 +8,9 @@
 	];
 </script>
 
-<footer id="contact">
+<footer>
 	<div class="footerwrapper">
 		<img src={xmologo} alt="Xmo" class="footerlogo" />
-		<a href="mailto:hej@xmo.se">hej@xmo.se</a>
 		<div class="langue" role="group" aria-label={$_('switch_language')}>
 			{#each languages as lang, i}
 				{#if i > 0}<span aria-hidden="true">/</span>{/if}
@@ -44,10 +43,6 @@
 	.footerlogo {
 		height: 58px;
 		margin-right: -20px;
-	}
-	a {
-		margin-top: 1.2em;
-		color: #828080;
 	}
 	.langue {
 		display: flex;
