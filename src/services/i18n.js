@@ -51,7 +51,7 @@ const en = {
 	capstone_role: 'Data Scientist',
 	capstone_alt: 'Calculator and charts',
 
-	p1: "I've worked as a Software Engineer since 2018, delivering cutting-edge technology for some of the biggest brands in Sweden. In my most recent projects my role has been focused on DevOps, working mainly with Docker and Kubernetes in GCP and Azure.",
+	p1: "I've worked as a Software Engineer since 2019, delivering cutting-edge technology for some of the biggest brands in Sweden. In my most recent projects my role has been focused on DevOps, working mainly with Docker and Kubernetes in GCP and Azure.",
 	p2: 'I also find Data Science fascinating and have used Machine Learning techniques such as regression, classification, clustering and outlier detection in some of my projects, mainly in Python. I also love to explore and train my own creative style in whatever area piques my curiosity, be it web design, piano or lead climbing.',
 	p3: 'During my time at university, I got the opportunity to do an exchange semester at UC Berkeley in California. As part of the project group running the exchange, I got the chance to build its website.',
 	p4: "During my time as an IT consultant for IBM, I was part of an exciting project at Volvo Trucks, helping them harness the power of their data with real-time monitoring of truck tire health. My role was centered around the data flow, frontend and DevOps parts of the project. You can read more about it on Volvo Trucks' own website.",
@@ -109,7 +109,7 @@ const sv = {
 	capstone_role: 'Data scientist',
 	capstone_alt: 'Miniräknare och diagram',
 
-	p1: 'Jag har jobbat som mjukvaruutvecklare sedan 2018 och har under den här perioden levererat spetsteknologi för några av Sveriges största företag. I de senaste projekten har min roll varit centrerad kring DevOps, framför allt Docker och Kubernetes i GCP och Azure.',
+	p1: 'Jag har jobbat som mjukvaruutvecklare sedan 2019 och har under den här perioden levererat spetsteknologi för några av Sveriges största företag. I de senaste projekten har min roll varit centrerad kring DevOps, framför allt Docker och Kubernetes i GCP och Azure.',
 	p2: 'Data science är också något som jag känner ett starkt intresse för! Jag har främst använt enklare regressions-, klassificerings- och klustermodeller i mina (Python-)projekt. Jag tycker också om att utforska min egen kreativitet inom olika områden som webbdesign, piano och klättring.',
 	p3: 'Under min tid på Chalmers fick jag möjlighet att åka på ett utbyte till UC Berkeley i Kalifornien. Jag var också med i projektgruppen som hade ansvar för utbytet och fick på så sätt möjligheten att bygga utbytets egen hemsida helt på egen hand.',
 	p4: 'Under min tid som IT-konsult på IBM fick jag möjlighet att delta i ett nytt, spännande projekt på Volvo Trucks. Mitt teams produkt extraherade värdefull information från lastbilarna i realtid. Min roll var centrerad kring dataflödet, frontend och DevOps-delarna i projektet. Du kan läsa mer om projektet på Volvo Trucks egen hemsida.',

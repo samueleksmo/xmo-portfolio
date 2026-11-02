@@ -53,6 +53,7 @@
             </div>
             <div class="myLinks">
                 <a href="#about">{$_('about')}</a>
+                <a href="#cv">CV</a>
                 <a href="#portfolio">{$_('portfolio')}</a>
                 <a href="#contact">{$_('contact')}</a>
             </div>
