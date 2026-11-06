@@ -1,6 +1,22 @@
 <script>
+	import { onMount } from 'svelte';
 	import { locale } from '../../services/i18n';
 	import { cv } from '../../services/cv';
+
+	// Live citation counts, keyed by DOI (from /api/citations, cached daily on Vercel).
+	let citations = {};
+	onMount(() => {
+		for (const pub of cv.en.publications) {
+			if (!pub.doi) continue;
+			fetch(`/api/citations?doi=${encodeURIComponent(pub.doi)}`)
+				.then((res) => (res.ok ? res.json() : null))
+				.then((data) => {
+					if (data && Number.isInteger(data.citations)) citations = { ...citations, [pub.doi]: data };
+				})
+				.catch(() => {});
+		}
+	});
+	$: citedLabel = (n) => (n === 1 ? c.labels.citedOne : c.labels.citedMany.replace('{n}', n));
 
 	$: c = cv[$locale] || cv.en;
 	$: years = (e) => e.when || (e.to === e.from ? `${e.from}` : `${e.from} – ${e.to ?? c.labels.now}`);
@@ -104,6 +120,13 @@
 						<li>
 							<a href={pub.url}>{pub.title} <span aria-hidden="true">↗</span></a>
 							<span class="rwhen">{pub.meta}</span>
+							{#if citations[pub.doi]}
+								{@const cit = citations[pub.doi]}
+								<a class="cited" href={cit.url} title={c.labels.citedSource.replace('{source}', cit.source)}>
+									<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 9.5C3 6.5 4.6 4.6 7 4v1.6C5.7 6.1 5 7 5 8h2v4H3V9.5Zm6 0C9 6.5 10.6 4.6 13 4v1.6c-1.3.5-2 1.4-2 2.4h2v4H9V9.5Z" /></svg>
+									{citedLabel(cit.citations)}
+								</a>
+							{/if}
 						</li>
 					{/each}
 				</ul>
@@ -464,6 +487,30 @@
 	}
 	.pubs a:hover {
 		text-decoration-color: var(--accent);
+	}
+	.cited {
+		align-self: flex-start;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4em;
+		margin-top: 0.3em;
+		padding: 0.35em 0.75em;
+		border-radius: 999px;
+		background: rgba(229, 107, 111, 0.12);
+		color: #b0353a;
+		font-family: 'Yantramanav-Bold', sans-serif;
+		font-size: 13px;
+		letter-spacing: 1px;
+		text-decoration: none;
+	}
+	.cited:hover {
+		background: rgba(229, 107, 111, 0.2);
+		text-decoration: none;
+	}
+	.cited svg {
+		width: 12px;
+		height: 12px;
+		fill: currentColor;
 	}
 	.refs {
 		margin-top: 2.2em;

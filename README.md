@@ -20,6 +20,7 @@ npm run preview   # serve the built dist/ locally
 - `src/services/i18n.js` – all English and Swedish text (`svelte-i18n`)
 - `src/components/contact/Contact.svelte` – contact form
 - `api/contact.js` – Vercel Function that emails form messages via [Resend](https://resend.com)
+- `api/citations.js` – Vercel Function that returns the paper's citation count (highest of Semantic Scholar, OpenAlex and Crossref), cached for a day
 - `src/global.css` – fonts and base styles
 - `public/` – static images and fonts, copied as-is into the build
 

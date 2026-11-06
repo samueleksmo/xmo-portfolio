@@ -17,6 +17,9 @@ export const cv = {
 			other: 'Other work',
 			certifications: 'Certifications',
 			publications: 'Publications',
+			citedOne: 'Cited by 1',
+			citedMany: 'Cited by {n}',
+			citedSource: 'Citation count from {source}, updated daily',
 			projects: 'Client projects',
 			more: 'Read more',
 			less: 'Show less',
@@ -155,7 +158,8 @@ export const cv = {
 			{
 				title: 'Emerging and Changing Tasks in the Development Process for Machine Learning Systems',
 				meta: 'ICSSP 2020 · with Hanyan Liu, Johan Risberg and Regina Hebig',
-				url: 'https://doi.org/10.1145/3379177.3388905'
+				url: 'https://doi.org/10.1145/3379177.3388905',
+				doi: '10.1145/3379177.3388905'
 			}
 		],
 		commitments: [
@@ -186,6 +190,9 @@ export const cv = {
 			other: 'Övrigt',
 			certifications: 'Certifieringar',
 			publications: 'Publikationer',
+			citedOne: '1 citering',
+			citedMany: '{n} citeringar',
+			citedSource: 'Antal citeringar enligt {source}, uppdateras dagligen',
 			projects: 'Kunduppdrag',
 			more: 'Läs mer',
 			less: 'Visa mindre',
@@ -324,7 +331,8 @@ export const cv = {
 			{
 				title: 'Emerging and Changing Tasks in the Development Process for Machine Learning Systems',
 				meta: 'ICSSP 2020 · med Hanyan Liu, Johan Risberg och Regina Hebig',
-				url: 'https://doi.org/10.1145/3379177.3388905'
+				url: 'https://doi.org/10.1145/3379177.3388905',
+				doi: '10.1145/3379177.3388905'
 			}
 		],
 		commitments: [
