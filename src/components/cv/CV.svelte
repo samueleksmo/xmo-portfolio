@@ -93,17 +93,38 @@
 					{#each c.spoken as l}<li>{l}</li>{/each}
 				</ul>
 
+				<h3 class="label">{c.labels.certifications}</h3>
+				<ul class="certs">
+					{#each c.certifications as cert}<li>{cert}</li>{/each}
+				</ul>
+
+				<h3 class="label">{c.labels.publications}</h3>
+				<ul class="pubs">
+					{#each c.publications as pub}
+						<li>
+							<a href={pub.url}>{pub.title} <span aria-hidden="true">↗</span></a>
+							<span class="rwhen">{pub.meta}</span>
+						</li>
+					{/each}
+				</ul>
+
 				<h3 class="label">{c.labels.commitments}</h3>
 				<ul class="roles">
 					{#each c.commitments as r}
-						<li><span class="role">{r.role}</span><span class="rorg">{r.org}</span><span class="rwhen">{r.when}</span></li>
+						<li>
+							<span class="role">{r.role}</span><span class="rorg">{r.org}</span><span class="rwhen">{r.when}</span>
+							{#if r.note}<span class="rnote">{r.note}</span>{/if}
+						</li>
 					{/each}
 				</ul>
 
 				<h3 class="label">{c.labels.other}</h3>
 				<ul class="roles">
 					{#each c.other as r}
-						<li><span class="role">{r.role}</span><span class="rorg">{r.org}</span><span class="rwhen">{r.when}</span></li>
+						<li>
+							<span class="role">{r.role}</span><span class="rorg">{r.org}</span><span class="rwhen">{r.when}</span>
+							{#if r.note}<span class="rnote">{r.note}</span>{/if}
+						</li>
 					{/each}
 				</ul>
 
@@ -394,6 +415,55 @@
 	.rwhen {
 		font-size: 14px;
 		color: #777;
+	}
+	.rnote {
+		font-size: 14px;
+		color: #555;
+		margin-top: 0.2em;
+	}
+	.certs {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.certs li {
+		font-size: 15px;
+		line-height: 1.35;
+		padding-left: 1em;
+		position: relative;
+		margin-bottom: 0.55em;
+	}
+	.certs li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.5em;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--accent);
+	}
+	.pubs {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.pubs li {
+		display: flex;
+		flex-direction: column;
+		gap: 0.3em;
+	}
+	.pubs a {
+		font-family: 'Oranienbaum', serif;
+		font-size: 17px;
+		line-height: 1.3;
+		color: #333;
+		text-decoration: underline;
+		text-decoration-color: var(--line);
+		text-underline-offset: 3px;
+	}
+	.pubs a:hover {
+		text-decoration-color: var(--accent);
 	}
 	.refs {
 		margin-top: 2.2em;

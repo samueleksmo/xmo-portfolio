@@ -15,6 +15,8 @@ export const cv = {
 			spoken: 'Languages',
 			commitments: 'Commitments',
 			other: 'Other work',
+			certifications: 'Certifications',
+			publications: 'Publications',
 			projects: 'Client projects',
 			more: 'Read more',
 			less: 'Show less',
@@ -29,7 +31,7 @@ export const cv = {
 				to: null,
 				title: 'Senior DevOps Engineer',
 				org: 'Saab Surveillance, Gothenburg',
-				phases: ['2025 – now: full-time employee at Saab', '2021 – 2025: consultant at Saab through Consid'],
+				phases: ['May 2025 – now: employed by Saab', 'May 2021 – Apr 2025: DevOps Engineer at Consid, on assignment at Saab'],
 				summary:
 					'Senior engineer in the DevOps team that maintains, upgrades and leads CI/CD development in a complex virtual environment – a mix of technical problem solving, tutoring junior colleagues, and aligning with other teams that need support. The team’s focus is a faster, better CI/CD flow that improves the efficiency, quality and competitiveness of the product.',
 				highlights: [
@@ -45,7 +47,7 @@ export const cv = {
 				title: 'Data Engineer · Consultant',
 				org: 'IBM',
 				summary:
-					'Consulting on projects across industries – from a real-time data app for Volvo Trucks to data-science projects on market trends for IKEA.',
+					'Part of IBM Sweden’s graduate programme – client projects, courses and a buddy programme together with a small team of new graduates. I consulted on projects across industries, from a real-time data app for Volvo Trucks to data-science projects on market trends for IKEA.',
 				projects: [
 					{
 						name: 'Volvo Trucks',
@@ -75,14 +77,19 @@ export const cv = {
 						when: '2020',
 						role: 'Software Engineer / Operations',
 						text: 'A Red Hat OS upgrade: new parallel virtual servers with the latest Red Hat, and migration of the existing application – including the database, load balancer, SSL and DNS configuration. The outdated, undocumented environment made it far harder than estimated and called for Linux, MySQL, WordPress and IBM Cloud Object Storage skills I had to pick up on the way. Every expected task was delivered.'
-					},
-					{
-						name: 'Energy Machines',
-						when: '2019',
-						role: 'Data Scientist · Master’s thesis',
-						text: 'Finding breakdowns in a climate-control system’s historical data with IBM’s in-house anomaly-detection tools, while balancing the needs of Chalmers, IBM and the client. With my thesis partner I handled data extraction, cleaning, clustering, parameter tuning and presenting the results. We found two outliers that turned out to be the root cause of an expensive leak – saving the company fines of more than SEK 100,000.'
 					}
 				]
+			},
+			{
+				id: 'thesis',
+				from: 2019,
+				to: 2019,
+				when: 'Jan – Jun 2019',
+				title: 'Master’s thesis student',
+				org: 'IBM, Gothenburg',
+				summary:
+					'Master’s thesis with my thesis partner Hanyan Liu, in collaboration with IBM in Gothenburg – Industry 4.0, machine learning, IoT and, specifically, anomaly detection.',
+				highlights: ['Client case, Energy Machines: Finding breakdowns in a climate-control system’s historical data with IBM’s in-house anomaly-detection tools, while balancing the needs of Chalmers, IBM and the client. With my thesis partner I handled data extraction, cleaning, clustering, parameter tuning and presenting the results. We found two outliers that turned out to be the root cause of an expensive leak – saving the company fines of more than SEK 100,000.']
 			},
 			{
 				id: 'hyperlab',
@@ -93,6 +100,14 @@ export const cv = {
 				org: 'Hyperlab AB, Gothenburg',
 				summary:
 					'Built and refactored one of Hyperlab’s already released apps in React Native. A great experience – I kept working hours at Hyperlab during my final year at university.'
+			},
+			{
+				id: 'ekmon',
+				from: 2016,
+				to: 2018,
+				title: 'IT Consultant',
+				org: 'Ekmon AB',
+				summary: 'IT consultant in the family business: built the company website and advised on IT-related matters.'
 			}
 		],
 		education: [
@@ -101,7 +116,19 @@ export const cv = {
 				to: 2019,
 				title: 'MSc, Software Engineering',
 				org: 'Chalmers University of Technology',
-				text: 'Machine-learning specialisation, with exchange studies at UC Berkeley (USA) and NCTU (Taiwan).'
+				text: 'Machine-learning specialisation.'
+			},
+			{
+				from: 2017,
+				to: 2018,
+				title: 'MSc studies, Computer Science (exchange)',
+				org: 'National Chiao Tung University (NCTU), Taiwan'
+			},
+			{
+				from: 2017,
+				to: 2017,
+				title: 'Summer Session',
+				org: 'University of California, Berkeley'
 			},
 			{
 				from: 2014,
@@ -113,14 +140,35 @@ export const cv = {
 		skills: [
 			{ group: 'Languages & frameworks', items: ['Python', 'SQL', 'Java', 'Groovy', 'JavaScript / Node', 'React', 'Svelte', 'HTML / CSS'] },
 			{ group: 'DevOps & tools', items: ['Docker', 'Kubernetes', 'Jenkins', 'Azure DevOps', 'Gradle', 'Nginx', 'Linux'] },
-			{ group: 'Cloud', items: ['Azure', 'Google Cloud', 'IBM Cloud'] }
+			{ group: 'Cloud', items: ['Azure', 'Google Cloud', 'IBM Cloud'] },
+			{ group: 'AI tools', items: ['Claude', 'Cursor', 'ChatGPT'] }
 		],
 		spoken: ['Swedish', 'English'],
+		certifications: [
+			'AI Workflow: Machine Learning, Visual Recognition and NLP',
+			'DevOps Foundations',
+			'Virtualization with KVM and QEMU',
+			'Gradle for Java-Based Applications and Libraries',
+			'Git for Teams'
+		],
+		publications: [
+			{
+				title: 'Emerging and Changing Tasks in the Development Process for Machine Learning Systems',
+				meta: 'ICSSP 2020 · with Hanyan Liu, Johan Risberg and Regina Hebig',
+				url: 'https://doi.org/10.1145/3379177.3388905'
+			}
+		],
 		commitments: [
 			{ role: 'Board member', org: 'Brf Johanneberg 1937', when: '2020 – 2025' },
-			{ role: 'Board member', org: 'Hyperlab AB', when: '2014 – 2021' }
+			{ role: 'Board member', org: 'Hyperlab AB', when: '2014 – 2021' },
+			{ role: 'Board member · IT', org: 'Chalmers Berkeley Committee', when: '2016 – 2018', note: 'Designed and built berkeleychalmers.se.' }
 		],
-		other: [{ role: 'Volunteer', org: 'Social services, Gothenburg', when: '2019 – 2021' }]
+		other: [
+			{ role: 'Volunteer', org: 'Social services, Gothenburg', when: '2019 – 2021' },
+			{ role: 'Alumni Relations Coordinator', org: 'Chalmers International Taiwan Office, Hsinchu', when: '2017 – 2018', note: 'Connected past and present exchange students from Chalmers and NCTU.' },
+			{ role: 'Social service worker', org: 'Gothenburg Social Service', when: '2014 – 2015', note: 'One weekend a month, co-led camps for children in need of extra support.' },
+			{ role: 'Part-time employee', org: 'ICA Supermarket, Söderköping', when: '2012 – 2015' }
+		]
 	},
 
 	sv: {
@@ -136,6 +184,8 @@ export const cv = {
 			spoken: 'Språk',
 			commitments: 'Uppdrag',
 			other: 'Övrigt',
+			certifications: 'Certifieringar',
+			publications: 'Publikationer',
 			projects: 'Kunduppdrag',
 			more: 'Läs mer',
 			less: 'Visa mindre',
@@ -150,7 +200,7 @@ export const cv = {
 				to: null,
 				title: 'Senior DevOps-ingenjör',
 				org: 'Saab Surveillance, Göteborg',
-				phases: ['2025 – nu: anställd på Saab', '2021 – 2025: konsult på Saab via Consid'],
+				phases: ['maj 2025 – nu: anställd på Saab', 'maj 2021 – apr 2025: DevOps-ingenjör på Consid, med uppdrag på Saab'],
 				summary:
 					'Senior ingenjör i DevOps-teamet som underhåller, uppgraderar och leder CI/CD-utvecklingen i en komplex virtuell miljö – en blandning av teknisk problemlösning, handledning av juniora kollegor och samordning med andra team som behöver stöd. Teamets fokus är ett snabbare och bättre CI/CD-flöde som förbättrar produktens effektivitet, kvalitet och konkurrenskraft.',
 				highlights: [
@@ -166,7 +216,7 @@ export const cv = {
 				title: 'Dataingenjör · Konsult',
 				org: 'IBM',
 				summary:
-					'Konsultuppdrag i olika branscher – från en realtidsapp för Volvo Trucks till data science-projekt om marknadstrender för IKEA.',
+					'Del av IBM Sveriges traineeprogram – kunduppdrag, kurser och ett fadderprogram tillsammans med ett litet team nyexaminerade. Jag hade konsultuppdrag i olika branscher, från en realtidsapp för Volvo Trucks till data science-projekt om marknadstrender för IKEA.',
 				projects: [
 					{
 						name: 'Volvo Trucks',
@@ -196,14 +246,19 @@ export const cv = {
 						when: '2020',
 						role: 'Mjukvaruingenjör / Drift',
 						text: 'En uppgradering av Red Hat: nya parallella virtuella servrar med senaste Red Hat och migrering av den befintliga applikationen – inklusive databas, lastbalanserare, SSL och DNS-konfiguration. Den föråldrade och odokumenterade miljön gjorde uppdraget betydligt svårare än beräknat och krävde kunskaper i Linux, MySQL, WordPress och IBM Cloud Object Storage som jag fick lära mig längs vägen. Alla förväntade uppgifter levererades.'
-					},
-					{
-						name: 'Energy Machines',
-						when: '2019',
-						role: 'Data scientist · Examensarbete',
-						text: 'Att hitta driftstörningar i ett klimatstyrningssystems historiska data med IBM:s egenutvecklade verktyg för avvikelsedetektering, och samtidigt balansera Chalmers, IBM:s och kundens behov. Tillsammans med min examensarbetspartner ansvarade jag för datauttag, datatvätt, klustring, parameterjustering och presentation av resultaten. Vi hittade två avvikelser som visade sig vara grundorsaken till ett dyrt läckage – vilket sparade företaget böter på över 100 000 kronor.'
 					}
 				]
+			},
+			{
+				id: 'thesis',
+				from: 2019,
+				to: 2019,
+				when: 'jan – jun 2019',
+				title: 'Examensarbetare',
+				org: 'IBM, Göteborg',
+				summary:
+					'Examensarbete tillsammans med min examensarbetspartner Hanyan Liu, i samarbete med IBM i Göteborg – Industri 4.0, maskininlärning, IoT och mer specifikt avvikelsedetektering.',
+				highlights: ['Kundcase, Energy Machines: Att hitta driftstörningar i ett klimatstyrningssystems historiska data med IBM:s egenutvecklade verktyg för avvikelsedetektering, och samtidigt balansera Chalmers, IBM:s och kundens behov. Tillsammans med min examensarbetspartner ansvarade jag för datauttag, datatvätt, klustring, parameterjustering och presentation av resultaten. Vi hittade två avvikelser som visade sig vara grundorsaken till ett dyrt läckage – vilket sparade företaget böter på över 100 000 kronor.']
 			},
 			{
 				id: 'hyperlab',
@@ -214,6 +269,14 @@ export const cv = {
 				org: 'Hyperlab AB, Göteborg',
 				summary:
 					'Vidareutvecklade och refaktorerade en av Hyperlabs redan lanserade appar i React Native. En väldigt lärorik tid – jag fortsatte sedan att jobba timmar på Hyperlab under mitt sista år på universitetet.'
+			},
+			{
+				id: 'ekmon',
+				from: 2016,
+				to: 2018,
+				title: 'IT-konsult',
+				org: 'Ekmon AB',
+				summary: 'IT-konsult i familjeföretaget: byggde företagets hemsida och gav råd i IT-relaterade frågor.'
 			}
 		],
 		education: [
@@ -222,7 +285,19 @@ export const cv = {
 				to: 2019,
 				title: 'Civilingenjör (MSc), Software Engineering',
 				org: 'Chalmers tekniska högskola',
-				text: 'Inriktning maskininlärning, med utbytesstudier vid UC Berkeley (USA) och NCTU (Taiwan).'
+				text: 'Inriktning maskininlärning.'
+			},
+			{
+				from: 2017,
+				to: 2018,
+				title: 'Masterstudier, datavetenskap (utbyte)',
+				org: 'National Chiao Tung University (NCTU), Taiwan'
+			},
+			{
+				from: 2017,
+				to: 2017,
+				title: 'Sommarkurser (Summer Session)',
+				org: 'University of California, Berkeley'
 			},
 			{
 				from: 2014,
@@ -234,13 +309,34 @@ export const cv = {
 		skills: [
 			{ group: 'Språk & ramverk', items: ['Python', 'SQL', 'Java', 'Groovy', 'JavaScript / Node', 'React', 'Svelte', 'HTML / CSS'] },
 			{ group: 'DevOps & verktyg', items: ['Docker', 'Kubernetes', 'Jenkins', 'Azure DevOps', 'Gradle', 'Nginx', 'Linux'] },
-			{ group: 'Moln', items: ['Azure', 'Google Cloud', 'IBM Cloud'] }
+			{ group: 'Moln', items: ['Azure', 'Google Cloud', 'IBM Cloud'] },
+			{ group: 'AI-verktyg', items: ['Claude', 'Cursor', 'ChatGPT'] }
 		],
 		spoken: ['Svenska', 'Engelska'],
+		certifications: [
+			'AI Workflow: Machine Learning, Visual Recognition and NLP',
+			'DevOps Foundations',
+			'Virtualization with KVM and QEMU',
+			'Gradle for Java-Based Applications and Libraries',
+			'Git for Teams'
+		],
+		publications: [
+			{
+				title: 'Emerging and Changing Tasks in the Development Process for Machine Learning Systems',
+				meta: 'ICSSP 2020 · med Hanyan Liu, Johan Risberg och Regina Hebig',
+				url: 'https://doi.org/10.1145/3379177.3388905'
+			}
+		],
 		commitments: [
 			{ role: 'Styrelseledamot', org: 'Brf Johanneberg 1937', when: '2020 – 2025' },
-			{ role: 'Styrelseledamot', org: 'Hyperlab AB', when: '2014 – 2021' }
+			{ role: 'Styrelseledamot', org: 'Hyperlab AB', when: '2014 – 2021' },
+			{ role: 'Styrelseledamot · IT', org: 'Chalmers Berkeley Committee', when: '2016 – 2018', note: 'Designade och byggde berkeleychalmers.se.' }
 		],
-		other: [{ role: 'Volontär', org: 'Socialtjänsten, Göteborg', when: '2019 – 2021' }]
+		other: [
+			{ role: 'Volontär', org: 'Socialtjänsten, Göteborg', when: '2019 – 2021' },
+			{ role: 'Alumnikoordinator', org: 'Chalmers International Taiwan Office, Hsinchu', when: '2017 – 2018', note: 'Knöt ihop tidigare och nuvarande utbytesstudenter från Chalmers och NCTU.' },
+			{ role: 'Lägerledare', org: 'Socialtjänsten, Göteborg', when: '2014 – 2015', note: 'En helg i månaden var jag med och ordnade läger för barn i behov av extra stöd.' },
+			{ role: 'Deltidsanställd', org: 'ICA Supermarket, Söderköping', when: '2012 – 2015' }
+		]
 	}
 };
